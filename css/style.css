@@ -415,6 +415,17 @@ h2 {
     cursor: pointer;
 }
 
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 10%;
+    transform: rotate(45deg);
+    background: white;
+    cursor: pointer;
+}
+
 .slider:focus {
     outline: none;
 }
