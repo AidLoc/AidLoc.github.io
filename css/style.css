@@ -525,8 +525,24 @@ h2 {
 #suburban {
     width: 70%;
     height: auto;
-    display
 }
+
+#rural_p {
+	font-family: 'AUTHENTICSans-90';
+    font-size: 2vmax;
+    color: white;
+    z-index: 3;
+    text-align: center;
+}
+
+#suburban_p {
+	font-family: 'AUTHENTICSans-90';
+    font-size: 2vmax;
+    color: white;
+    z-index: 3;
+    text-align: center;
+}
+
 
 
 /*-----*/

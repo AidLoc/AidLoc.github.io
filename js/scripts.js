@@ -28,6 +28,10 @@ function myFunction() {
         var g2 = ((pos / -50) * 33) + 66;
         document.documentElement.style.setProperty('--Rval', g1 + '%');
         document.documentElement.style.setProperty('--Uval', g2 + '%');
+
+        document.getElementById("rural_p").innerHTML = g1 + '%';
+        
+        document.getElementById("suburban_p").innerHTML = g2 + '%';
     }
 
     if (pos > 50) {
@@ -46,21 +50,25 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
+    var i;
+    var slides = document.getElementsByClassName("slide");
 
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
-  slides[slideIndex-1].style.display = "block";
-  console.log(n);
+    slides[slideIndex - 1].style.display = "block";
+    console.log(n);
 }
 
 
@@ -141,4 +149,3 @@ $("#stats").click(function () {
         },
         1750);
 });
-
