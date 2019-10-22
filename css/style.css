@@ -71,6 +71,7 @@ h2 {
 }
 
 #house {
+    margin-top: 2vw;
     width: 12vw;
     grid-column: 2/3;
     grid-row: 1/2;
