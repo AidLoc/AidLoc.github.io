@@ -414,18 +414,22 @@ h2 {
     cursor: pointer;
 }
 
+.slider:focus {
+    outline: none;
+}
+
 #dot1 {
     margin-left: 1vw;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: rgb(20, 20, 20);
     background-color: white;
 }
 
 #dot2 {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: rgb(20, 20, 20);
     background-color: white;
@@ -433,8 +437,8 @@ h2 {
 
 #dot3 {
     margin-right: 1vw;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: rgb(20, 20, 20);
     background-color: white;
