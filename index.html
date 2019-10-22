@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Something</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="bg"></div>
+        <div class="textbox">
+            <img id="house" src="images/house.svg" alt="">
+            <h1>SOMETHING <br> ABOUT TO <br> HAPPEN</h1>
+            <h2>the story of the suburbs</h2>
+        </div>
+    </section>
+    
+    <div data-aos="fade-down" data-aos-anchor=".gallery" data-aos-offset="600" class="nav">
+        <div id="images"><a href="dev.html">DEVELOPMENT</a></div>
+        <div id="home"><img src="images/house-small.png" alt=""></div>
+        <div id="stats">STATISTICS</div>
+    </div>
+    
+    <section class="gallery" id="#gallery">
+
+        <div data-aos="fade-right" id="G1">
+            <img src="images/fingers.jpg" alt="">
+            <div id="T1">
+                <h3>The Suburbs</h3><br>“The Suburbs” have become such a unique part of contemporary culture, and are equal parts idolized and loathed...
+            </div>
+        </div>
+
+        <div data-aos="fade-left" id="G2">
+            <div id="T2">
+                <h3>History</h3><br>Advertisements of the era painted dreamlike scenes of life in the suburbs: Clean houses, friendly neighbors, perfectly mowed lawns, and of course smiling families...
+            </div>
+            <img src="images/gaze.jpg" alt="">
+        </div>
+
+        <div data-aos="fade-right" id="G3">
+            <img src="images/mother.jpg" alt="">
+            <div id="T3">
+                <h3>Today</h3><br>The exact same thing is happening 60 years later. The suburbs never “went away”, housing complexes are marketed to new immigrants seeking the exact same ideals people were seeking then. The suburbs continue to grow and sprawl outwards, creating an endless maze of designer homes and people looking for the dream they were sold...
+            </div>
+        </div>
+
+        <div data-aos="fade-left" id="G4">
+            <div id="T4">
+                <h3>What's Wrong?</h3><br>The average 4 bedroom suburban home will sell for upwards of $350 000, and once this transaction is complete, the developer has very little if any involvement with the property...
+            </div>
+            <img src="images/father.jpg" alt="">
+        </div>
+
+        <div data-aos="fade-right" id="G5">
+            <img src="images/orange.jpg" alt="">
+            <div id="T5">
+                <h3>Response</h3><br>As the suburbs began to become the new norm, critics were quick to begin to question the new lifestyle. Macleans published an article in 1954 critiquing the “litany of social, environmental, economic and congestion problems arising from these newfangled housing developments”...
+            </div>
+        </div>
+
+        <div data-aos="fade-left" id="G6">
+            <div id="T6">
+                <h3>The Future</h3><br>Can we escape the suburbs? Despite a bleak present, a future of connected communities isn’t impossible. It’s a matter of rapid changes in both urban planning and public attitude. Construction of new suburban complexes need to be halted in favor of reworking existing neighborhoods...
+            </div>
+            <img src="images/lock.jpg" alt="">
+        </div>
+
+        <div data-aos="fade-right" id="G7">
+            <img src="images/land.jpg" alt="">
+            <div id="T7">
+                <h3>The Future</h3><br>“Build up, not out” is a common phrase in the contemporary urban planning scene, and refers to a necessity to condense neighborhoods and build taller buildings that can house 25 families in the same space that used be taken up by a single suburban home...
+            </div>
+        </div>
+
+        <div data-aos="fade-left" id="G8">
+            <div id="T8">
+                <h3>The Future</h3><br>With a new generation of sustainably minded urban planners and designers entering the industry, the future is promising. Companies like Sidewalk Labs are already working on breaking down the boundaries and the legislature fueling suburban sprawl and undertaking massive redevelopment projects to create efficient and sustainable neighborhoods...
+            </div>
+            <img src="images/dead.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="essay">
+        <div class="gallery-wrapper">
+            <div class="slide fade">
+                <img src="images/p3.png" alt="" id="p1">
+            </div>
+            <div class="slide fade">
+                <img src="images/p5.png" alt="" id="p2">
+            </div>
+            <div class="slide fade">
+                <img src="images/p6.png" alt="" id="p3">
+            </div>
+            <div class="slide fade">
+                <img src="images/p10.png" alt="" id="p4">
+            </div>
+            <div class="slide fade">
+                <img src="images/p11.png" alt="" id="p5">
+            </div>
+            <div class="slide fade">
+                <img src="images/p12.png" alt="" id="p6">
+            </div>
+            <div class="slide fade">
+                <img src="images/p13.png" alt="" id="p7">
+            </div>
+            <div class="slide fade">
+                <img src="images/p14.png" alt="" id="p8">
+            </div>
+            <div class="slide fade">
+                <img src="images/p15.png" alt="" id="p9">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section class="migration">
+
+        <h1 id="migration_header">In 1900, 2/3 of Canadians lived in rural areas</h1>
+
+        <div class="slidecont">
+            <input type="range" min="0" max="100" value="0" step=".1" class="slider" id="myRange">
+        </div>
+
+        <div class="slideoverlay">
+            <div id="dot1"></div>
+            <div id="dot2"></div>
+            <div id="dot3"></div>
+        </div>
+
+        <div class="dateoverlay">
+            <div id="date">1900</div>
+            <div id="date">1971</div>
+            <div id="date">2016</div>
+        </div>
+
+        <div data-aos="fade-right" id="rural_container">
+            <img id="rural" src="images/rural.png" alt="">
+        </div>
+
+        <div data-aos="fade-left" id="suburban_container">
+            <img id="suburban" src="images/suburban.png" alt="">
+        </div>
+
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2500,
+        });
+    </script>
+    <script src="../js/scripts.js"></script>
+</body></html>
