@@ -644,7 +644,7 @@ h2 {
     align-items: center;
     height: 300vh;
     width: 100%;
-    background-image: url("../images/sky.JPG");
+    background-image: url("../images/sky.png");
     background-size: cover;
     position: relative;
 }
