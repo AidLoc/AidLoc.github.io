@@ -1,6 +1,7 @@
 var t2_toilet = false;
 var rate = 0;
 var count = 0;
+var time = 0;
 var counting = true; //is the counter running? on by default
 var i; //for counter
 
@@ -11,6 +12,10 @@ var queued;
 //room clicked
 
 var obj; //index number
+
+var id; //temp id
+
+var name; //svg filename "a string"
 
 var t2lamp = false;
 var t2shower = false;
@@ -62,20 +67,45 @@ var values = new Array(0.833, 6.083, 6.083, 0.833, 2, 1.666, 0.5, 0.5, 0.1, 74.1
 (function counter(i) {
     setTimeout(function () {
         count = count + rate;
+        time = time + 1;
         count = Math.round(count * 10) / 10;
-        if (count >= 9999){document.getElementById("c1").style.fontSize = "1.5vmax";}
-        if (count >= 99999){document.getElementById("c1").style.fontSize = "1.25vmax";}
-        if (count >= 999999){document.getElementById("c1").style.fontSize = "1vmax";}
+        if (count >= 9999) {
+            document.getElementById("c1").style.fontSize = "1.5vmax";
+        }
+        if (count >= 99999) {
+            document.getElementById("c1").style.fontSize = "1.25vmax";
+        }
+        if (count >= 999999) {
+            document.getElementById("c1").style.fontSize = "1vmax";
+        }
         document.getElementById("c1").innerHTML = count;
         document.getElementById("c2").innerHTML = Math.round(rate * 10) / 10;;
         if (--i) {
             counter(i);
         }
-    }, 1250);
+    }, 1000);
 })(100000);
 
 
+function modal() {
+    if (typeof active !== 'undefined') {
+        active.style.display = "none";
+    }
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modal").style.animationName = "scale-up";
+    document.getElementById("modal").style.animationPlayState = "running";
+    document.getElementById("modal-content").innerHTML = "In &nbsp;" + time + "&nbsp; minutes (1 second = 1 minute), you consumed &nbsp;" + count + "&nbsp; watts of power. Compared to the Canadian average, you were &nbsp;" + (((11, 135 - ((count * 60) / 1000)) / 11, 135) * 100) + "% off.";
+}
 
+function reset() {
+    document.getElementById("modal").style.display = "none";
+
+    rate = 0;
+    count = 0;
+    time = 0;
+    
+    Arrays.fill(items, false);
+}
 
 function trigger(queued) {
     console.log(queued);
@@ -99,14 +129,28 @@ function trigger(queued) {
     }
 }
 
-function object(obj) {
-    if (items[obj] === true) {
-        items[obj] = false;
+function object(obj, id) {
+    if (items[obj] === true) { //if toggled on
+        items[obj] = false; //turn off
+
+        name = id.getAttribute("src");
+
+        name = name.replace("active", "inactive");
+
+        id.setAttribute("src", name);
+
         rate = rate - values[obj];
         console.log("rate is now " + rate);
 
-    } else if(items[obj] === false) {
-        items[obj] = true;
+    } else if (items[obj] === false) { //if toggled off
+        items[obj] = true; //turn on
+
+        name = id.getAttribute("src");
+
+        name = name.replace("inactive", "active");
+
+        id.setAttribute("src", name);
+
         rate = rate + values[obj];
         console.log("rate is now " + rate);
     }

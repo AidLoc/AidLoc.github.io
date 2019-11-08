@@ -32,66 +32,77 @@
                 <h1>Welcome!</h1>
                 <p>Perhaps your house might not look like this, but Canadians tend to use the same categories of appliances. Experiment with the house below, and see how much energy you consume!</p>
             </div>
+            <button type="submit" onclick="modal()">submit</button>
+        </div>
+
+        <div id="modal">
+            <div id="box">
+               <h1>How do you stack up?</h1>
+                <p id="modal-content"> 
+
+                </p>
+                <button type="submit" onclick="reset()">close</button>
+            </div>
         </div>
 
 
         <div id="T2">
-            <img src="inactive/T2_Light.svg" onclick="object(0)" id="light">
-            <img src="inactive/T2_Shower.svg" onclick="object(1)" id="shower">
-            <img src="inactive/T2_Sink.svg" onclick="object(2)" id="sink">
+            <img src="inactive/T2_Light.svg" onclick="object(0, this)" id="light">
+            <img src="inactive/T2_Shower.svg" onclick="object(1, this)" id="shower">
+            <img src="inactive/T2_Sink.svg" onclick="object(2, this)" id="sink">
             <img src="inactive/T2_Toilet.svg" id="toilet">
         </div>
 
         <div id="Comp">
-            <img src="inactive/Comp_Lamp.svg" onclick="object(3)" id="lamp">
-            <img src="inactive/Comp_Light.svg" onclick="object(4)" id="light">
-            <img src="inactive/Comp_Table.svg" onclick="object(5)" id="table">
-            <img src="inactive/Comp_Monitor1.svg" onclick="object(6)" id="m1">
-            <img src="inactive/Comp_Monitor2.svg" onclick="object(7)" id="m2">
-            <img src="inactive/Comp_Router.svg" onclick="object(8)" id="router">
+            <img src="inactive/Comp_Lamp.svg" onclick="object(3, this)" id="lamp">
+            <img src="inactive/Comp_Light.svg" onclick="object(4, this)" id="light">
+            <img src="inactive/Comp_Table.svg" onclick="object(5, this)" id="table">
+            <img src="inactive/Comp_Monitor1.svg" onclick="object(6, this)" id="m1">
+            <img src="inactive/Comp_Monitor2.svg" onclick="object(7, this)" id="m2">
+            <img src="inactive/Comp_Router.svg" onclick="object(8, this)" id="router">
         </div>
 
         <div id="Lau">
-            <img src="inactive/Lau_Dryer.svg" onclick="object(9)" id="dryer">
-            <img src="inactive/Lau_Iron.svg" onclick="object(10)" id="iron">
-            <img src="inactive/Lau_Lamp.svg" onclick="object(11)" id="lamp">
-            <img src="inactive/Lau_Light.svg" onclick="object(12)" id="light">
+            <img src="inactive/Lau_Dryer.svg" onclick="object(9, this)" id="dryer">
+            <img src="inactive/Lau_Iron.svg" onclick="object(10, this)" id="iron">
+            <img src="inactive/Lau_Lamp.svg" onclick="object(11, this)" id="lamp">
+            <img src="inactive/Lau_Light.svg" onclick="object(12, this)" id="light">
             <img src="inactive/Lau_Shelf.svg" id="shelf">
         </div>
 
         <div id="B1">
             <img src="inactive/B1_Bed.svg" id="bed">
-            <img src="inactive/B1_Drawer.svg" onclick="object(13)" id="drawer">
-            <img src="inactive/B1_Lamp.svg" onclick="object(14)" id="lamp">
-            <img src="inactive/B1_Light.svg" onclick="object(15)" id="light">
+            <img src="inactive/B1_Drawer.svg" onclick="object(13, this)" id="drawer">
+            <img src="inactive/B1_Lamp.svg" onclick="object(14, this)" id="lamp">
+            <img src="inactive/B1_Light.svg" onclick="object(15, this)" id="light">
         </div>
 
         <div id="B2">
             <img src="inactive/B2_Bed.svg" id="bed">
-            <img src="inactive/B2_Lamp.svg" onclick="object(16)" id="lamp">
-            <img src="inactive/B2_Light.svg" onclick="object(17)" id="light">
-            <img src="inactive/B2_Table.svg" onclick="object(18)" id="table">
+            <img src="inactive/B2_Lamp.svg" onclick="object(16, this)" id="lamp">
+            <img src="inactive/B2_Light.svg" onclick="object(17, this)" id="light">
+            <img src="inactive/B2_Table.svg" onclick="object(18, this)" id="table">
         </div>
 
         <div id="TV">
-            <img src="inactive/TV_Cable.svg" onclick="object(19)" id="cable">
+            <img src="inactive/TV_Cable.svg" onclick="object(19, this)" id="cable">
             <img src="inactive/TV_Chair.svg" id="chair">
-            <img src="inactive/TV_Game.svg" onclick="object(20)" id="game">
-            <img src="inactive/TV_Light.svg" onclick="object(21)" id="light">
-            <img src="inactive/TV_TV.svg" onclick="object(22)" id="tv">
-            <img src="inactive/TV_Lamp.svg" onclick="object(23)" id="lamp">
+            <img src="inactive/TV_Game.svg" onclick="object(20, this)" id="game">
+            <img src="inactive/TV_Light.svg" onclick="object(21, this)" id="light">
+            <img src="inactive/TV_TV.svg" onclick="object(22, this)" id="tv">
+            <img src="inactive/TV_Lamp.svg" onclick="object(23, this)" id="lamp">
         </div>
 
         <div id="Kit">
-            <img src="inactive/Kit_Fridge.svg" onclick="object(24)" id="fridge">
-            <img src="inactive/Kit_Light.svg" onclick="object(25)" id="light">
-            <img src="inactive/Kit_Oven.svg" onclick="object(26)" id="oven">
-            <img src="inactive/Kit_Sink.svg" onclick="object(27)" id="sink">
+            <img src="inactive/Kit_Fridge.svg" onclick="object(24, this)" id="fridge">
+            <img src="inactive/Kit_Light.svg" onclick="object(25, this)" id="light">
+            <img src="inactive/Kit_Oven.svg" onclick="object(26, this)" id="oven">
+            <img src="inactive/Kit_Sink.svg" onclick="object(27, this)" id="sink">
         </div>
 
         <div id="T1">
-            <img src="inactive/T1_Light.svg" onclick="object(28)" id="light">
-            <img src="inactive/T1_Sink.svg" onclick="object(29)" id="sink">
+            <img src="inactive/T1_Light.svg" onclick="object(28, this)" id="light">
+            <img src="inactive/T1_Sink.svg" onclick="object(29, this)" id="sink">
             <img src="inactive/T2_Toilet.svg" id="toilet">
             <img src="inactive/T1_Towel.svg" id="towel">
         </div>
@@ -99,10 +110,10 @@
         <div id="Att">
             <img src="AttFill.png" id="AttFill">
             <img src="inactive/Att_Chair.svg" id="chair">
-            <img src="inactive/Att_Light.svg" onclick="object(30)" id="light">
-            <img src="inactive/Att_Table.svg" onclick="object(31)" id="table">
-            <img src="inactive/furnace.svg" onclick="object(32)" id="furnace">
-            <img src="inactive/heater.svg" onclick="object(33)" id="heater">
+            <img src="inactive/Att_Light.svg" onclick="object(30, this)" id="light">
+            <img src="inactive/Att_Table.svg" onclick="object(31, this)" id="table">
+            <img src="inactive/furnace.svg" onclick="object(32, this)" id="furnace">
+            <img src="inactive/heater.svg" onclick="object(33, this)" id="heater">
         </div>
 
         <img id="tip" src="tip.png" alt="">
@@ -142,7 +153,6 @@
                     .cls-7 {
                         fill: none;
                     }
-
                 </style>
             </defs>
             <title>Mockups_455</title>
@@ -536,7 +546,6 @@
                     .cls-1 {
                         fill: #BFE3D3;
                     }
-
                 </style>
             </defs>
             <title>Mockups_455</title>
@@ -554,6 +563,4 @@
 
     </section>
 
-</body>
-
-</html>
+</body></html>

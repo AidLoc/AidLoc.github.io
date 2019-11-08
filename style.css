@@ -83,7 +83,7 @@
     background-color: #4E888C;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     justify-items: center;
     align-items: center;
     z-index: 3;
@@ -93,9 +93,9 @@
 }
 
 #cnt1 {
+    margin-top: 1vw;
     height: 10vh;
     width: 9vw;
-    border-top-right-radius: 50px 50px;
     background-color: #9CD2A7;
     box-shadow: 0 0 0 4px #06251C;
     text-align: center;
@@ -125,9 +125,9 @@
 
 
 #cnt2 {
+    margin-top: 1vw;
     height: 10vh;
     width: 9vw;
-    border-bottom-left-radius: 50px 50px;
     background-color: #BFE3D3;
     box-shadow: 0 0 0 4px #06251C;
     text-align: center;
@@ -176,6 +176,81 @@
 
 }
 
+button {
+    display: inline-block;
+    border: none;
+    padding: .5rem 2rem;
+    width: 10vw;
+    margin: 0;
+    text-decoration: none;
+    background: #9CD2A7;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #06251C;
+    color: black;
+    font-family: futura;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+        transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #9CD2A7;
+    cursor: pointer;
+}
+
+button:focus {}
+
+button:active {
+    transform: scale(0.80);
+}
+
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #06251C;
+    opacity: .75;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#box {
+        opacity: 1;
+    width: 45vw;
+    height: 45vh;
+    background-color: #4E888C;
+    border-radius: 25px;
+    box-shadow: 0 0 0 4px #06251C;
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    padding: 2vw;
+    font-family: futura;
+    color: black;
+}
+
+#close {
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 2vw;
+}
+
+#close:hover {
+    position: relative;
+    top: 0;
+    right: 0;
+    color: white;
+}
 
 
 
