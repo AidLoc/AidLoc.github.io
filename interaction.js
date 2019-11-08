@@ -98,7 +98,9 @@ function modal() {
 }
 
 function reset() {
-    document.getElementById("modal").style.display = "none";
+    if (typeof active !== 'undefined') {
+        active.style.display = "none";
+    };
 
     rate = 0;
     count = 0;

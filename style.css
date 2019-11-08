@@ -13,6 +13,11 @@
     src: url("../fonts/ARCADECLASSIC.TTF");
 }
 
+@font-face {
+    font-family: '8bit2';
+    src: url("../fonts/8-BIT WONDER.TTF");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +37,21 @@
     align-items: center;
     justify-content: center;
     flex-flow: row nowrap;
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: #06251C; display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    font-family: "8bit2";
+    color: white;
+    font-size: 2rem;
+
 }
 
 
@@ -76,6 +96,7 @@
 
 
 #panel {
+    margin-top: 2.5vw;
     position: absolute;
     left: 0vw;
     height: 85vh;
@@ -222,7 +243,7 @@ button:active {
 }
 
 #box {
-        opacity: 1;
+    opacity: 1;
     width: 45vw;
     height: 45vh;
     background-color: #4E888C;
@@ -306,6 +327,7 @@ button:active {
 /* -- T2 -- */
 
 #T2 {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -360,6 +382,7 @@ button:active {
 /* -- Comp -- */
 
 #Comp {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -430,6 +453,7 @@ button:active {
 /* -- Lau -- */
 
 #Lau {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -490,6 +514,7 @@ button:active {
 /* -- B1 -- */
 
 #B1 {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -543,6 +568,7 @@ button:active {
 /* -- B2 -- */
 
 #B2 {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -597,6 +623,7 @@ button:active {
 /* -- TV -- */
 
 #TV {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -667,6 +694,7 @@ button:active {
 /* -- Kitchen -- */
 
 #Kit {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -719,6 +747,7 @@ button:active {
 /* -- Kitchen -- */
 
 #T1 {
+    margin-top: 4vw;
     width: 65vw;
     height: 85vh;
     background-color: #9CD2A7;
@@ -770,6 +799,7 @@ button:active {
 /* -- Attic -- */
 
 #Att {
+    margin-top: 4vw;
     width: 65vw;
     height: 50vh;
     display: none;
@@ -786,7 +816,8 @@ button:active {
 #Att #light:hover,
 #table:hover,
 #furnace:hover,
-#heater:hover {
+#heater:hover,
+#chair:hover{
     opacity: .75;
     cursor: pointer;
 }
