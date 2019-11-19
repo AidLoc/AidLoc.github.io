@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'header';
-    src: url("../fonts/AUTHENTICSans-130.otf");
+    src: url("fonts/AUTHENTICSans-130.otf");
 }
 
 @font-face {
     font-family: 'body';
-    src: url("../fonts/AUTHENTICSans-60.otf");
+    src: url("fonts/AUTHENTICSans-60.otf");
 }
 
 @font-face {
     font-family: '8bit';
-    src: url("../fonts/ARCADECLASSIC.TTF");
+    src: url("fonts/ARCADECLASSIC.TTF");
 }
 
 @font-face {
     font-family: '8bit2';
-    src: url("../fonts/8-BIT WONDER.TTF");
+    src: url("fonts/8-BIT WONDER.TTF");
 }
 
 * {
