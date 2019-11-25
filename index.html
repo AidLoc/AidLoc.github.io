@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +24,12 @@
     </section>
 
     <div data-aos="fade-down" data-aos-anchor=".gallery" data-aos-offset="600" class="nav">
-        <div id="images"><a href="dev.html">DEVELOPMENT</a></div>
-        <div id="home"><img src="images/house-small.png" alt=""></div>
-        <div id="stats">STATISTICS</div>
+        <div id="cont">
+            <div id="images"><a href="dev.html">DEVELOPMENT</a></div>
+            <div id="home"><img src="images/house-small.png" alt=""></div>
+            <div id="stats">STATISTICS</div>
+        </div>
+
     </div>
 
     <section class="gallery" id="#gallery">
@@ -87,38 +91,10 @@
         </div>
     </section>
 
-    <section class="essay">
-        <div class="gallery-wrapper">
-            <div class="slide fade">
-                <img src="images/p3.png" alt="" id="p1">
-            </div>
-            <div class="slide fade">
-                <img src="images/p5.png" alt="" id="p2">
-            </div>
-            <div class="slide fade">
-                <img src="images/p6.png" alt="" id="p3">
-            </div>
-            <div class="slide fade">
-                <img src="images/p10.png" alt="" id="p4">
-            </div>
-            <div class="slide fade">
-                <img src="images/p11.png" alt="" id="p5">
-            </div>
-            <div class="slide fade">
-                <img src="images/p12.png" alt="" id="p6">
-            </div>
-            <div class="slide fade">
-                <img src="images/p13.png" alt="" id="p7">
-            </div>
-            <div class="slide fade">
-                <img src="images/p14.png" alt="" id="p8">
-            </div>
-            <div class="slide fade">
-                <img src="images/p15.png" alt="" id="p9">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+
+
+    <section id="s1" class="s1">
+        <h1 data-aos="zoom-in">First, they came to the suburbs</h1>
     </section>
 
     <section id="migration" class="migration">
@@ -141,16 +117,82 @@
             <div id="date">2016</div>
         </div>
 
-        <!--<div id="rural_p">66%</div>-->
-
         <div data-aos="fade-right" id="rural_container">
             <img id="rural" src="images/rural.png" alt="">
+            <div id="rural_p">66%</div>
         </div>
-
-        <!--<div id="suburban_p">33%</div>-->
 
         <div data-aos="fade-left" id="suburban_container">
             <img id="suburban" src="images/suburban.png" alt="">
+            <div id="suburban_p">33%</div>
+        </div>
+
+    </section>
+
+    <section id="s1" class="s1">
+        <h1 data-aos="zoom-in">Then, the suburbs began to grow</h1>
+    </section>
+
+
+    <section id="expansion" class="expansion">
+
+        <h1 id="area">5651</h1>
+        <h1 id="expansion_header">km<sup>2</sup> of natural land developed into suburbs</h1>
+
+        <div class="slidecont">
+            <input type="range" min="0" max="100" value="0" step=".1" class="slider" id="myRange2">
+        </div>
+
+        <div class="slideoverlay">
+            <div id="dot1"></div>
+            <div id="dot2"></div>
+        </div>
+
+        <div class="dateoverlay">
+            <div id="date">1971</div>
+            <div id="date">2011</div>
+        </div>
+
+        <div class="icongrid">
+            <img src="images/tree.png" class="tree" id="A" alt="">
+            <img src="images/tree.png" class="tree" id="B" alt="">
+            <img src="images/tree.png" class="tree" id="C" alt="">
+            <img src="images/tree.png" class="tree" id="D" alt="">
+            <img src="images/tree.png" class="tree" id="E" alt="">
+            <img src="images/tree.png" class="tree" id="F" alt="">
+            <img src="images/tree.png" class="tree" id="G" alt="">
+            <img src="images/tree.png" class="tree" id="H" alt="">
+            <img src="images/tree.png" class="tree" id="I" alt="">
+            <img src="images/tree.png" class="tree" id="J" alt="">
+            <img src="images/tree.png" class="tree" id="K" alt="">
+            <img src="images/tree.png" class="tree" id="L" alt="">
+        </div>
+
+    </section>
+
+    <section id="s1" class="s1">
+        <h1 data-aos="zoom-in">And it's slowly killing us</h1>
+    </section>
+
+
+    <section id="effect" class="effect">
+
+        <h1 id="effect_header">those living in rural environments have on average the lowest number of chronic medical conditions.</h1>
+        
+        <div id="status">
+            <img id="statusimg" src="images/healthy.png" alt="">
+        </div>
+        
+        <div class="break"></div>
+
+        <div id="buttoncont">
+            <input type="radio" name="state" id="healthy" onclick="status()" checked>
+            <input type="radio" name="state" id="moderate" onclick="status()">
+            <input type="radio" name="state" id="unhealthy" onclick="status()">
+            <div class="break"></div>
+            <div>Rural</div>
+            <div>Urban</div>
+            <div>Suburban</div>
         </div>
 
     </section>
@@ -161,6 +203,9 @@
         AOS.init({
             duration: 2500,
         });
+
     </script>
     <script src="../js/scripts.js"></script>
-</body></html>
+</body>
+
+</html>

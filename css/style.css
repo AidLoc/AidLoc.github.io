@@ -8,6 +8,8 @@
     src: url("../fonts/AUTHENTICSans-90.otf");
 }
 
+@import url('https://fonts.googleapis.com/css?family=Cousine&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -346,12 +348,30 @@ h2 {
     transform: translateX(0%);
 }
 
-/*-----*/
+/*--s1--*/
+
+.s1 {
+    width: 100%;
+    height: 105vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1 h1 {
+    font-family: 'AUTHENTICSans-90';
+    font-size: 4vmax;
+    color: white;
+}
+
+
+/*--migration--*/
 
 .migration {
     background-image: url(../images/sky3.jpg);
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -363,8 +383,8 @@ h2 {
     grid-column: 1/3;
     grid-row: 1;
     text-align: center;
-    padding-top: 2vw;
-    transition: 1s ease;
+    padding-top: 4vw;
+    transition: opacity .5s ease-in-out;
     color: white;
 }
 
@@ -495,14 +515,14 @@ h2 {
     border-radius: 50%;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) var(--Rval, 33%), white 0);
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-flow: column wrap;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 3vw;
 }
 
 #rural {
-    width: 80%;
+    width: 75%;
     height: auto;
 }
 
@@ -516,126 +536,175 @@ h2 {
     border-radius: 50%;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) var(--Uval, 66%), white 0);
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 3vw;
 }
 
 #suburban {
-    width: 70%;
+    width: 75%;
     height: auto;
 }
 
 #rural_p {
-	font-family: 'AUTHENTICSans-90';
-    font-size: 2vmax;
-    color: white;
+    font-family: 'Cousine', monospace;
+    font-size: 3vmax;
+    color: #6D9CB3;
+    opacity: .75;
     z-index: 3;
-    text-align: center;
 }
 
 #suburban_p {
-	font-family: 'AUTHENTICSans-90';
-    font-size: 2vmax;
-    color: white;
+    font-family: 'Cousine', monospace;
+    font-size: 3vmax;
+    color: #6D9CB3;
+    opacity: .75;
     z-index: 3;
-    text-align: center;
 }
 
 
+/*--s2--*/
 
-/*-----*/
+.s2 {
+    width: 100%;
+    height: 105vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s2 h1 {
+    font-family: 'AUTHENTICSans-90';
+    font-size: 4vmax;
+    color: white;
+}
+
+/*--expansion--*/
 
 
-.essay {
-    background-image: url(../images/sky2.jpg);
+.expansion {
+    background-image: url(../images/arctic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+}
+
+#area {
+    font-family: 'Cousine', monospace;
+    font-size: 5vmax;
+    grid-column: 1/3;
+    grid-row: 1;
+    padding-top: 2vw;
+    text-align: center;
+    transition: opacity .5s ease-in-out;
+    color: white;
+}
+
+#expansion_header {
+    font-family: 'AUTHENTICSans-90';
+    font-size: 2vmax;
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+    padding-top: 7vw;
+    transition: opacity .5s ease-in-out;
+    color: white;
+}
+
+.icongrid {
+    width: 75%;
+    height: 60vh;
+    grid-row: 2/4;
+    grid-column: 1/3;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-.gallery-wrapper {
-    width: auto;
-    height: 100vh;
-    position: relative;
-    margin: auto;
-}
-
-.slide {
-    display: none;
-    width: auto;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.slide img {
-    width: auto;
-    height: 100vh;
+.tree {
+    width: 15%;
+    padding: .5vw;
+    transition: 1s ease;
 }
 
 
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
+/*--effect--*/
+
+
+.effect {
+    background-image: url(../images/sky2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: space-around;
+
+}
+
+#effect_header {
+    width: 75vw;
+    font-family: 'AUTHENTICSans-90';
+    font-size: 2vmax;
+    text-align: center;
+    padding-top: 3vw;
+    transition: opacity .5s ease-in-out;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#status {
+    width: 40vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#status img{
+    width: 75%;
+    height: auto;
+}
+
+#buttoncont {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#buttoncont div {
+    font-family: 'AUTHENTICSans-90';
+    font-size: 1.5vmax;
+    color: white;
+    width: 2vw;
+    overflow: visible;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#buttoncont input {
+    cursor: pointer;
+    background-color: crimson;
 }
 
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .2
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .2
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/*-----*/
+/*-- Development --*/
 
 .dev {
     display: flex;
@@ -677,8 +746,8 @@ h2 {
 }
 
 .break {
-  flex-basis: 100%;
-  height: 0;
+    flex-basis: 100%;
+    height: 0;
 }
 
 .dev img {
