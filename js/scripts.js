@@ -55,17 +55,17 @@ function myFunction() {
 $('#myRange2').mousemove(function () {
     var cVal2 = $(this).val();
 
-    if (cVal2 > 11.5) {
+    if (cVal2 > 15) {
         document.getElementById("A").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 11.5) {
+    if (cVal2 < 15) {
         document.getElementById("A").setAttribute("src", "images/tree.png");
     }
-    if (cVal2 > 11.5) {
-        document.getElementById("G").setAttribute("src", "images/haus.png");
+    if (cVal2 > 15) {
+        document.getElementById("H").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 11.5) {
-        document.getElementById("G").setAttribute("src", "images/tree.png");
+    if (cVal2 < 15) {
+        document.getElementById("H").setAttribute("src", "images/tree.png");
     }
     
     if (cVal2 > 30) {
@@ -75,65 +75,79 @@ $('#myRange2').mousemove(function () {
         document.getElementById("B").setAttribute("src", "images/tree.png");
     }
     if (cVal2 > 30) {
-        document.getElementById("H").setAttribute("src", "images/haus.png");
-    }
-    if (cVal2 < 30) {
-        document.getElementById("H").setAttribute("src", "images/tree.png");
-    }
-    
-    
-    if (cVal2 > 50) {
-        document.getElementById("C").setAttribute("src", "images/haus.png");
-    }
-    if (cVal2 < 50) {
-        document.getElementById("C").setAttribute("src", "images/tree.png");
-    }
-    if (cVal2 > 50) {
         document.getElementById("I").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 50) {
+    if (cVal2 < 30) {
         document.getElementById("I").setAttribute("src", "images/tree.png");
     }
     
     
-    if (cVal2 > 70) {
-        document.getElementById("D").setAttribute("src", "images/haus.png");
+    if (cVal2 > 45) {
+        document.getElementById("C").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 70) {
-        document.getElementById("D").setAttribute("src", "images/tree.png");
+    if (cVal2 < 45) {
+        document.getElementById("C").setAttribute("src", "images/tree.png");
     }
-    if (cVal2 > 70) {
+    if (cVal2 > 45) {
         document.getElementById("J").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 70) {
+    if (cVal2 < 45) {
         document.getElementById("J").setAttribute("src", "images/tree.png");
     }
     
     
-    if (cVal2 > 90) {
-        document.getElementById("E").setAttribute("src", "images/haus.png");
+    if (cVal2 > 60) {
+        document.getElementById("D").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 90) {
-        document.getElementById("E").setAttribute("src", "images/tree.png");
+    if (cVal2 < 60) {
+        document.getElementById("D").setAttribute("src", "images/tree.png");
     }
-    if (cVal2 > 90) {
+    if (cVal2 > 60) {
         document.getElementById("K").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 90) {
+    if (cVal2 < 60) {
         document.getElementById("K").setAttribute("src", "images/tree.png");
     }
     
-    if (cVal2 >= 100) {
-        document.getElementById("F").setAttribute("src", "images/haus.png");
+    
+    if (cVal2 > 75) {
+        document.getElementById("E").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 100) {
-        document.getElementById("F").setAttribute("src", "images/tree.png");
+    if (cVal2 < 75) {
+        document.getElementById("E").setAttribute("src", "images/tree.png");
     }
-    if (cVal2 >= 100) {
+    if (cVal2 > 75) {
         document.getElementById("L").setAttribute("src", "images/haus.png");
     }
-    if (cVal2 < 100) {
+    if (cVal2 < 75) {
         document.getElementById("L").setAttribute("src", "images/tree.png");
+    }
+    
+    if (cVal2 >= 90) {
+        document.getElementById("F").setAttribute("src", "images/haus.png");
+    }
+    if (cVal2 < 90) {
+        document.getElementById("F").setAttribute("src", "images/tree.png");
+    }
+    if (cVal2 >= 90) {
+        document.getElementById("M").setAttribute("src", "images/haus.png");
+    }
+    if (cVal2 < 90) {
+        document.getElementById("M").setAttribute("src", "images/tree.png");
+    }
+    
+    
+    if (cVal2 >= 100) {
+        document.getElementById("G").setAttribute("src", "images/haus.png");
+    }
+    if (cVal2 < 100) {
+        document.getElementById("G").setAttribute("src", "images/tree.png");
+    }
+    if (cVal2 >= 100) {
+        document.getElementById("N").setAttribute("src", "images/haus.png");
+    }
+    if (cVal2 < 100) {
+        document.getElementById("N").setAttribute("src", "images/tree.png");
     }
     
     
