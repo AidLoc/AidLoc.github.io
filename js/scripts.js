@@ -67,7 +67,7 @@ $('#myRange2').mousemove(function () {
     if (cVal2 < 15) {
         document.getElementById("H").setAttribute("src", "images/tree.png");
     }
-    
+
     if (cVal2 > 30) {
         document.getElementById("B").setAttribute("src", "images/haus.png");
     }
@@ -80,8 +80,8 @@ $('#myRange2').mousemove(function () {
     if (cVal2 < 30) {
         document.getElementById("I").setAttribute("src", "images/tree.png");
     }
-    
-    
+
+
     if (cVal2 > 45) {
         document.getElementById("C").setAttribute("src", "images/haus.png");
     }
@@ -94,8 +94,8 @@ $('#myRange2').mousemove(function () {
     if (cVal2 < 45) {
         document.getElementById("J").setAttribute("src", "images/tree.png");
     }
-    
-    
+
+
     if (cVal2 > 60) {
         document.getElementById("D").setAttribute("src", "images/haus.png");
     }
@@ -108,8 +108,8 @@ $('#myRange2').mousemove(function () {
     if (cVal2 < 60) {
         document.getElementById("K").setAttribute("src", "images/tree.png");
     }
-    
-    
+
+
     if (cVal2 > 75) {
         document.getElementById("E").setAttribute("src", "images/haus.png");
     }
@@ -122,7 +122,7 @@ $('#myRange2').mousemove(function () {
     if (cVal2 < 75) {
         document.getElementById("L").setAttribute("src", "images/tree.png");
     }
-    
+
     if (cVal2 >= 90) {
         document.getElementById("F").setAttribute("src", "images/haus.png");
     }
@@ -135,8 +135,8 @@ $('#myRange2').mousemove(function () {
     if (cVal2 < 90) {
         document.getElementById("M").setAttribute("src", "images/tree.png");
     }
-    
-    
+
+
     if (cVal2 >= 100) {
         document.getElementById("G").setAttribute("src", "images/haus.png");
     }
@@ -149,10 +149,10 @@ $('#myRange2').mousemove(function () {
     if (cVal2 < 100) {
         document.getElementById("N").setAttribute("src", "images/tree.png");
     }
-    
-    
-    
-    
+
+
+
+
 });
 
 //graphic i/o2
@@ -169,86 +169,21 @@ function myFunction2() {
 }
 
 function status() {
-    if (document.getElementById('healthy').checked){
+    if (document.getElementById('healthy').checked) {
         document.getElementById('statusimg').setAttribute("src", "images/healthy.png")
         document.getElementById('effect_header').innerHTML = "Those living in rural environments have on average the lowest number of chronic medical conditions.";
-    }
-    
-    else if (document.getElementById('moderate').checked){
+    } else if (document.getElementById('moderate').checked) {
         document.getElementById('statusimg').setAttribute("src", "images/moderate.png")
         document.getElementById('effect_header').innerHTML = "Those living in urban environments have on average 2nd highest number of chronic medical conditions.";
-    }
-    
-    else if (document.getElementById('unhealthy').checked){
+    } else if (document.getElementById('unhealthy').checked) {
         document.getElementById('statusimg').setAttribute("src", "images/unhealthy.png")
         document.getElementById('effect_header').innerHTML = "Those living in suburban environments have on average the highest number of chronic medical conditions.";
     }
-    
+
 }
 
 
-
-$("#T1").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        3000);
-});
-
-$("#T2").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        1750);
-});
-
-
-$("#T3").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        1750);
-});
-
-
-$("#T4").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        1750);
-});
-
-
-$("#T5").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        1750);
-});
-
-
-$("#T6").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        1750);
-});
-
-
-$("#T7").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        1750);
-});
-
-
-$("#T8").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".essay").offset().top
-        },
-        1750);
-});
+//nav
 
 $("#home").click(function () {
     $('html,body').animate({
@@ -259,7 +194,84 @@ $("#home").click(function () {
 
 $("#stats").click(function () {
     $('html,body').animate({
-            scrollTop: $(".migration").offset().top
+            scrollTop: $(".s1").offset().top
         },
         1750);
+});
+
+$("#essay").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A1", 2800);
+});
+
+$("#scenes").click(function () {
+    $('html,body').animate({
+            scrollTop: $(".gallery").offset().top
+        },
+        1750);
+});
+
+
+//gallery scrolling
+
+$(".exit").click(function () {
+    $("#book").fadeOut(800);
+});
+
+$("#F1").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A1", 2800);
+});
+
+$("#F2").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A2", 2800);
+});
+
+$("#F3").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A3", 2800);
+});
+
+$("#F4").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A4", 2800);
+});
+
+$("#F5").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A5", 2800);
+});
+
+$("#F6").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A6", 2800);
+});
+
+$("#F7").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A7", 2800);
+});
+
+$("#F8").click(function () {
+    $("#book").css("opacity", "0");
+    $("#book").css("display", "block");
+    $("#book").animate({opacity: 1}, 1000);
+    $("#book").scrollTo("#A8", 2800);
 });

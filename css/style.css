@@ -86,22 +86,20 @@ h2 {
 
 .nav {
     position: fixed;
-    display: flex;
-    flex-flow: row nowrap;
+    width: 100vw;
     background-color: rgb(20, 20, 20);
     color: white;
-    justify-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-    top: -5.5vw;
+    top: 0vw;
     z-index: 3;
     padding: 1vw;
 }
 
-.nav:hover {
-    top: 0;
+.nav:hover > #cont{
+    margin-top: 0vw;
 }
 
 .nav a {
@@ -109,14 +107,34 @@ h2 {
     color: white;
 }
 
-.nav > div {
+#cont {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1vmax;
-    padding: 1vw;
-    font-family: 'AUTHENTICSans-90';
+    margin-top: -4vw;
+    transition: all 1s ease-in-out;
 }
+
+#cont > div {
+    /*links*/
+    font-size: 1vmax;
+    padding: .5vw;
+    font-family: 'AUTHENTICSans-90';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+#cont > div:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/*special cases*/
 
 #home img {
     width: 30%;
@@ -127,13 +145,7 @@ h2 {
     filter: invert(100);
 }
 
-.nav > div:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
-
-.nav > div:hover > a {
+#cont > div:hover > a {
     color: black;
 }
 
@@ -141,10 +153,46 @@ h2 {
 
 /*-----*/
 
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFF8EA;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+}
+
+#mob-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1003;
+    font-family: 'AUTHENTICSans-90';
+    font-size: 3vmax;
+    color: black;
+    text-align: center;
+}
+
+#mob-cont img {
+    margin-top: 5vh;
+    width: 20vw;
+    height: auto;
+}
+
+/*-----*/
+
 
 
 .gallery {
-    height: 300vh;
+    height: 350vh;
     width: 100%;
     background-image: url("../images/sky.png");
     background-size: cover;
@@ -152,9 +200,16 @@ h2 {
 }
 
 .gallery img {
-    width: 100%;
+    width: 50%;
     height: auto;
     object-fit: cover;
+}
+
+.gallery h3 {
+    font-family: 'AUTHENTICSans-90';
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
 }
 
 #G1,
@@ -168,191 +223,214 @@ h2 {
     position: absolute;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     z-index: 0;
-    max-width: 40%;
+    width: 45vw;
     overflow: overlay;
 }
 
-#T1,
-#T2,
-#T3,
-#T4,
-#T5,
-#T6,
-#T7,
-#T8 {
-    position: relative;
+#F1,
+#F2,
+#F3,
+#F4,
+#F5,
+#F6,
+#F7,
+#F8 {
+    width: 100%;
+    height: 100%;
     background-color: rgb(20, 20, 20);
-    width: 75%;
-    transition: 1s ease;
-    z-index: -1;
-    cursor: pointer;
-    color: white;
-    padding: 1vw;
-    font-family: 'AUTHENTICSans-90';
-    text-align: left;
-    font-size: 1vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-#T1,
-#T2,
-#T3,
-#T4,
-#T5,
-#T6,
-#T7,
-#T8 :hover {
-    cursor: pointer;
-}
 
-.gallery h3 {
-    font-family: 'AUTHENTICSans-150';
-    font-size: 1.5vw;
-    color: white;
-}
+
 
 #G1 {
+    width: 40vw;
+    height: 70vh;
+    background-image: url(../images/fingers.jpg);
+    background-size: cover;
     left: 10vw;
     top: 20vh;
 }
 
-#T1 {
-    transform: translateX(-90%);
-    padding-right: 2vw;
+#G1:hover > #F1 {
+    opacity: .85;
+    cursor: pointer;
 }
 
-#T1:hover {
-    transform: translateX(0%);
-}
-
-/**/
 
 #G2 {
+    width: 30vw;
+    height: 80vh;
+    background-image: url(../images/gaze.jpg);
+    background-size: cover;
     right: 5vw;
     top: 25vh;
 }
 
-#T2 {
-    transform: translateX(90%);
-    padding-left: 2vw;
+#G2:hover > #F2 {
+    opacity: .85;
+    cursor: pointer;
 }
 
-#T2:hover {
-    transform: translateX(0%);
-}
-
-/**/
 
 #G3 {
-    left: 15vw;
-    top: 80vh;
+    width: 40vw;
+    height: 80vh;
+    background-image: url(../images/mother.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 5vw;
+    top: 100vh;
 }
 
-#G3 img {
-    width: 45%;
+#G3:hover > #F3 {
+    opacity: .85;
+    cursor: pointer;
 }
 
-#T3 {
-    transform: translateX(-90%);
-    width: 35%;
-    padding-right: 2vw;
-}
-
-#T3:hover {
-    transform: translateX(0%);
-}
-
-/**/
 
 #G4 {
+    width: 30vw;
+    height: 60vh;
+    background-image: url(../images/father.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     right: 15vw;
-    top: 75vh;
+    top: 120vh;
 }
 
-#T4 {
-    transform: translateX(90%);
-    padding-left: 2vw;
+#G4:hover > #F4 {
+    opacity: .85;
+    cursor: pointer;
 }
-
-#T4:hover {
-    transform: translateX(0%);
-}
-
-/**/
 
 #G5 {
-    left: 17vw;
-    top: 160vh;
+    width: 40vw;
+    height: 60vh;
+    background-image: url(../images/orange.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 10vw;
+    top: 190vh;
 }
 
-#T5 {
-    transform: translateX(-90%);
-    padding-right: 2vw;
+#G5:hover > #F5 {
+    opacity: .85;
+    cursor: pointer;
 }
-
-#T5:hover {
-    transform: translateX(0%);
-}
-
-/**/
 
 #G6 {
-    right: 5vw;
-    top: 135vh;
+    width: 40vw;
+    height: 60vh;
+    background-image: url(../images/lock.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 8vw;
+    top: 185vh;
 }
 
-#T6 {
-    transform: translateX(90%);
-    padding-left: 2vw;
+#G6:hover > #F6 {
+    opacity: .85;
+    cursor: pointer;
 }
-
-#T6:hover {
-    transform: translateX(0%);
-}
-
-/**/
 
 #G7 {
+    width: 40vw;
+    height: 60vh;
+    background-image: url(../images/land.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     left: 6vw;
-    top: 220vh;
+    top: 260vh;
 }
 
-#T7 {
-    transform: translateX(-90%);
-    width: 45%;
-    padding-right: 2vw;
+#G7:hover > #F7 {
+    opacity: .85;
+    cursor: pointer;
 }
-
-#T7:hover {
-    transform: translateX(0%);
-}
-
-/**/
 
 #G8 {
+    width: 30vw;
+    height: 80vh;
+    background-image: url(../images/dead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     right: 10vw;
-    top: 200vh;
+    top: 260vh;
 }
 
-#G8 img {
-    width: 55%;
+#G8:hover > #F8 {
+    opacity: .85;
+    cursor: pointer;
 }
 
-#T8 {
-    transform: translateX(90%);
-    width: 35%;
-    padding-left: 2vw;
+/*-----*/
+
+#book {
+    position: fixed;
+    display: none;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-#T8:hover {
-    transform: translateX(0%);
+.page {
+    z-index: 300;
+    width: auto;
+    height: 100vh;
+    display: inline-block;
+    padding-right: 5vw;
 }
+
+.page img {
+    height: 100%;
+    width: auto;
+}
+
+.exit {
+    width: 3vw;
+    padding: .5vw;
+    color: white;
+    background: rgb(20, 20, 20);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 400;
+    text-align: center;
+    font-family: 'AUTHENTICSans-90';
+}
+
+.exit:hover {
+    opacity: .75;
+    cursor: pointer
+}
+
+
+
+
+
 
 /*--s1--*/
 
 .s1 {
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     background-color: rgb(20, 20, 20);
     display: flex;
     justify-content: center;
@@ -370,6 +448,8 @@ h2 {
 
 .migration {
     background-image: url(../images/sky3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: grid;
@@ -383,7 +463,7 @@ h2 {
     grid-column: 1/3;
     grid-row: 1;
     text-align: center;
-    padding-top: 4vw;
+    padding-top: 2vw;
     transition: opacity .5s ease-in-out;
     color: white;
 }
@@ -632,7 +712,8 @@ h2 {
 }
 
 .tree {
-    height: 50%;
+    max-height: 50%;
+    max-width: 13%;
     padding: .5vw;
 }
 
@@ -702,7 +783,7 @@ h2 {
     align-items: center;
 }
 
-#buttoncont input {
+#buttoncont input[type=radio] {
     cursor: pointer;
     background-color: crimson;
 }
@@ -776,7 +857,7 @@ h2 {
 
 
 
-/* widescreen threshold */
+/* widescreen threshold i.e. below this width simulate a laptop / tablet*/
 @media (max-width: 1200px) {
 
     .header h1,
@@ -829,4 +910,11 @@ h2 {
         margin-right: 0;
     }
 
+}
+
+/* mobile threshold i.e. display overlay until rotated / alternate device */
+@media (max-width: 450px) {
+    .mobile-overlay {
+        display: block;
+    }
 }
