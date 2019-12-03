@@ -17,9 +17,9 @@
     overflow-x: hidden;
 }
 
-/*::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
-}*/
+}
 
 .header {
     display: flex;
