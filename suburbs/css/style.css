@@ -21,8 +21,6 @@
     display: none;
 }
 
-
-
 .header {
     display: flex;
     flex-flow: column wrap;
