@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="js/jquery.js"></script>
-<script src="js/rellax.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
 
 <head>
     <meta name="viewport" content="width=device-width, 
@@ -12,24 +14,19 @@
 </head>
 
 <body>
-    <section class="nav">
-        <div id="main-btn">TERMINAL</div>
-        <div id="splash-btn">AIDEN LOCKE</div>
-        <div id="resp-btn"> READINGS</div>
-    </section>
+
+    <div data-aos="fade-down" class="nav" data-aos-anchor=".main">
+        <div id="port-btn">portfolio</div>
+        <div id="h-btn">home</div>
+        <a href="dev.html">
+            <div id="dev-btn">development</div>
+        </a>
+    </div>
 
     <section class="splash">
         <div id="quote">
-            <h1>make me a chair that works even if it is broken</h1>
-            <h2>- Santo Romano</h2>
-        </div>
-        <img id="chair" src="images/chair.gif" alt="">
-    </section>
-
-    <section class="splash2">
-        <div id="quote">
-            <h1>It may look like a duck, it may quack like a duck, but it don't work like a duck</h1>
-            <h2>- Santo Romano</h2>
+            <h1>Aiden Locke</h1>
+            <h2>Le Garage</h2>
         </div>
         <img id="duck" src="images/duck.gif" alt="">
     </section>
@@ -38,217 +35,165 @@
 
         <div class="container">
             <div class="grid-row">
-                <div class="grid-item bomb">
+                <div class="grid-item lofi">
+                    <a>
+                        <p>
+                            Lofidelitism
+                        </p>
+                    </a>
+                </div>
+                <div class="grid-item smt">
                     <p>
-                        ATOMBOMB = ARPANET?<br><br>
-                        ATOMBOMB = ARPANET?<br><br>
-                        ATOMBOMB = ARPANET?<br>
+                        Something About to Happen
+                    </p>
+                </div>
+            </div>
+            <div class="port" id="lofi">
+                <div class="cont">
+                    <div class="owl-carousel owl-theme">
+                        <img src="images/lofi/4.jpg" alt="">
+                        <img src="images/lofi/2.jpg" alt="">
+                        <img src="images/lofi/9.jpg" alt="">
+                        <img src="images/lofi/10.jpg" alt="">
+                        <img src="images/lofi/IMG_20190207_123010.jpg" alt="">
+                        <img src="images/lofi/IMG_20190207_123102.jpg" alt="">
+                    </div>
+                </div>
+                <div class="desc">
+                    <h1>Lofidelitism</h1>
+                    <p>Lofidelitism is a fabricated artistic movement which was originally meant to represent a set of visual aesthetics and feelings present in lofi and chill-hop music. Lofidelic art rides somewhere between hyper-real and a family photo album. Art of this nature aims to disassemble the pompous art world by creating accessible and understandable art, that simply pleases the viewer, calms them, and helps them reach a happy place. In an abstract sense, the visuals attempt to mimic what a memory might “look like”, blurring the sharp and clear picture in favour of focusing on and repeating certain details. </p>
+                    <div class="close">Close</div>
+                </div>
+            </div>
+            <div class="port" id="smt">
+                <div class="cont">
+                    <div class="owl-carousel owl-theme">
+                        <img src="images/smt/mother.jpg" alt="">
+                        <img src="images/smt/father.jpg" alt="">
+                        <img src="images/smt/dead.jpg" alt="">
+                        <img src="images/smt/orange.jpg" alt="">
+                        <img src="images/smt/IMG_20190325_121643.jpg" alt="">
+                        <img src="images/smt/IMG_20190325_121712.jpg" alt="">
+                    </div>
+                </div>
+                <div class="desc">
+                    <h1>Something About to Happen: The Story of the Suburbs</h1>
+                    <p>In March of 2019, I conceived “Something About to Happen”, a project that explored and brought awareness to the conditions we subject ourselves to while living in the suburbs, and the significant environmental and social implications of rapidly expanding suburban sprawl. The book consisted of a short essay, as well as an extensive photographic collection that attempts to communicate the more abstruse emotional impact the suburbs have on its inhabitants. The project has grown to include a website, while the photographic series continues to grow as I refine my thesis. </p>
+                    <div class="close">Close</div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-item dida">
+                    <p>
+                        Failures: A Didascalogue
+                    </p>
+                </div>
+                <div class="grid-item fofa">
+                    <p>
+                        FOFA Undegraduate Student Exhibition Catalogue
+                    </p>
+                </div>
+            </div>
+            <div class="port" id="dida">
+                <div class="cont">
+                    <div class="owl-carousel owl-theme">
+                        <img src="images/dida/DSC_0825.JPG" alt="">
+                        <img src="images/dida/DSC_0831.JPG" alt="">
+                        <img src="images/dida/DSC_0832.JPG" alt="">
+                        <img src="images/dida/DSC_0835.JPG" alt="">
+                        <img src="images/dida/DSC_0834.JPG" alt="">
+                        <img src="images/dida/DSC_0840.JPG" alt="">
+                    </div>
+                </div>
+                <div class="desc">
+                    <h1>Failures: A Didascalogue</h1>
+                    <p>This project consisted of producing a conceptual book and supporting visuals for the experimental play FAILURES. A “DIDASCALOGUE” written by Concordia professor Dr. Louis Patrick Leroux. The play details the slow demise of a toxic relationship, laid out on a grand stage. To adequately represent the complex emotions of the play, I chose to photograph a woman (Emme Geryk) moving through the various stages of trauma as the relationship unravelled. The images were then painted over by artist Lauren Egli, to represent the ideological struggle between man and woman. The play consisted almost exclusively of the characters “HIM” and “SHE”, thus the layout (developed in collaboration with Lauren Egli) played on this duality. </p>
+                    <div class="close">Close</div>
+                </div>
+            </div>
+            <div class="port" id="fofa">
+                <div class="cont">
+                    <div class="owl-carousel owl-theme">
+                        <img src="images/fofa/dance3.jpg" alt="">
+                        <img src="images/fofa/dancer-final.jpg" alt="">
+                        <img src="images/fofa/vert.png" alt="">
+                        <img src="images/fofa/DSC_0447.JPG" alt="">
+                        <img src="images/fofa/DSC_0613.JPG" alt="">
+                        <img src="images/fofa/DSC_0626.JPG" alt="">
+                    </div>
+                </div>
+                <div class="desc">
+                    <h1>FOFA Catalogue: Dancers
+                    </h1>
+                    <p>Once a year, the Concordia Faculty of Fine Arts Gallery arranges a multidisciplinary exhibition to showcase its talented undergraduate artists. I was fortunate to be a part of a team of four designers responsible for developing the catalogue, which acts as both an exhibition guide and an archive of the 2019/2020 exhibition. The catalogue consisted of images of the works, essays, and images documenting dancers who interpreted the works put on display. In prior catalogues, due to the final performances not being selected until after the book is published, the dancers had not been represented on the same level as the visual artists. I sought to change that, and arranged to photograph all of the early works in progress, and stitched them together to create visuals that encapsulate the general feel of the works, without excluding any members of the dance faculty. </p>
+                    <div class="close">Close</div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-item karel">
+                    <p>
+                        An Outlook on Typography: Karel Martens
                     </p>
                 </div>
 
-                <div class="grid-item comp">
+                <div class="grid-item monstr">
                     <p>
-                        AS WE MAY THINK<br><br>
-                        MAY WE THINK AS<br><br>
-                        WE THINK AS MAY<br>
+                        MonstrARTity 2019 Campaign
                     </p>
                 </div>
-                <div class="grid-item int">
-                    <p>
-                        INTERNET HISTORY<br><br>
-                        INTERNET HISTORY<br><br>
-                        INTERNET HISTORY<br>
-                    </p>
+            </div>
+            <div class="port" id="karel">
+                <div class="cont">
+                    <div class="owl-carousel owl-theme">
+                        <img src="images/karel/1-01.png" alt="">
+                        <img src="images/karel/1-03-03.png" alt="">
+                        <img src="images/karel/1-02.png" alt="">
+                        <img src="images/karel/1-06.png" alt="">
+                        <img src="images/karel/1-09.png" alt="">
+                        <img src="images/karel/1-07.png" alt="">
+                    </div>
                 </div>
-
-                <div class="grid-item pat">
-                    <p>
-                        GOOGLE GLOOGLE<br><br>
-                        MLOOGLE TOOGLE<br><br>
-                        FLOOGLE GOOGLE<br>
-                    </p>
+                <div class="desc">
+                    <h1>Karel Martens: An Outlook on Typography
+                    </h1>
+                    <p>An outlook on typography was a series of event posters meant to advertise a lecture by the esteemed typographer and designer Karel Martens. Naturally, the developed pieces were meant to pay homage to Martens’ incredibly unique style. His works are diverse in nature, so naturally the series of posters covered mimicked his assorted techniques. Working digitally, I was able to play on the metaphysical nature of his prints. While he would show print borders and elements of his process in his final works, I integrated elements of my digital work environment, like bounding boxes, as part of the final piece. The final posters were printed in colour at 24x36 inches on a digital offset printer.</p>
+                    <div class="close">Close</div>
                 </div>
-
-                <div class="grid-item bus">
-                    <p>
-                        HOP ON THE<br><br>
-                        DATABUS(E)<br><br>
-                        NEXT STOP: PRIVACY<br>
-                    </p>
+            </div>
+            <div class="port" id="monstr">
+                <div class="cont">
+                    <div class="owl-carousel owl-theme">
+                        <img src="images/monstr/bmm_poster.jpg" alt="">
+                        <img src="images/monstr/mwm_poster.jpg" alt="">
+                        <img src="images/monstr/tickets.jpg" alt="">
+                        <img src="images/monstr/sp1.png" alt="">
+                        <img src="images/monstr/sp3.png" alt="">
+                        <img src="images/monstr/sp2.png" alt="">
+                    </div>
                 </div>
-                <div class="grid-item thumb">
-                    <p>
-                        OPEN ME OPEN ME<br><br>
-                        I AM NON NEUTRAL<br><br>
-                        OPEN ME OPEN ME<br>
-                    </p>
+                <div class="desc">
+                    <h1>Karel Martens: An Outlook on Typography
+                    </h1>
+                    <p>Monstrartity is a not-for-profit organization, based in Mississauga and committed to providing arts for the young and old alike. During the summer season, they put on a variety of high traffic cultural festivals. As their print designer, I was responsible for crafting a variety of promotional content including posters, flyers, bus &nbsp; subway banners, social media graphics, merchandise, tickets and sponsorship packages. My most comprehensive project to date, what was most challenging during my period working at Monstrartity was developing content that encapsulated all the details of such a complicated festival, while also managing to pay homage to the incredible number of sponsors a not-for-profit relies on. </p>
+                    <div class="close">Close</div>
                 </div>
-                <div class="grid-item w1">
-                    <a href="basics/index.html">
-                        <p>WEEK 1 WEEK 1 WEEK 1</p>
-                        <p>WEEK 1 WEEK 1 WEEK 1</p>
-                        <p>WEEK 1 WEEK 1 WEEK 1</p>
-                    </a>
-                </div>
-                <div class="grid-item w2">
-                    <a href="grids/index.html">
-                        <p>WEEK 2 WEEK 2 WEEK 2</p>
-                        <p>WEEK 2 WEEK 2 WEEK 2</p>
-                        <p>WEEK 2 WEEK 2 WEEK 2</p>
-                    </a>
-                </div>
-                <div class="grid-item w3">
-                    <a href="queries/index.html">
-                        <p>WEEK 3 WEEK 3 WEEK 3</p>
-                        <p>WEEK 3 WEEK 3 WEEK 3</p>
-                        <p>WEEK 3 WEEK 3 WEEK 3</p>
-                    </a>
-                </div>
-                <div class="grid-item w4">
-                    <p>WEEK 4 WEEK 4 WEEK 4</p>
-                    <p>WEEK 4 WEEK 4 WEEK 4</p>
-                    <p>WEEK 4 WEEK 4 WEEK 4</p>
-                </div>
-                <div class="grid-item w5">
-                    <a href="elevator/index.html">
-                        <p>WEEK 5 WEEK 5 WEEK 5</p>
-                        <p>WEEK 5 WEEK 5 WEEK 5</p>
-                        <p>WEEK 5 WEEK 5 WEEK 5</p>
-                    </a>
-                </div>
-                <div class="grid-item w6">
-                    <a href="http://aidloc.github.io/infog/index.html" target="_blank">
-                        <p>WEEK 6+ WEEK 6+ WEEK 6+</p>
-                        <p>EXTERNAL PROJECT WITH SVG </p>
-                        <p> &amp; ADVANCED JAVASCRIPT / JQUERY</p>
-                    </a>
-                </div>
-
-                <div class="grid-item final">
-                    <a href="http://aidloc.github.io/suburbs/index.html" target="_blank">
-                        <p>FINAL PROJECT FINAL PROJECT</p>
-                        <p>THE SUBURBSBURBSBURBS</p>
-                        <p>FINAL PROJECT FINAL PROJECT</p>
-                    </a>
-                </div>
-
             </div>
         </div>
 
     </section>
-    <section class="o">
-        <div class="rellax os" id="o1" data-rellax-speed="-2">&#65518;</div>
-        <div class="rellax os" id="o2" data-rellax-speed="-.25">&#65518;</div>
-        <div class="rellax os" id="o3" data-rellax-speed="-.5">&#65518;</div>
-        <div class="rellax os" id="o4" data-rellax-speed="-.75">&#65518;</div>
-        <div class="rellax os" id="o5" data-rellax-speed="-2">&#65518;</div>
-        <div class="rellax os" id="o6" data-rellax-speed="-.25">&#65518;</div>
-        <div class="rellax os" id="o7" data-rellax-speed="-.5">&#65518;</div>
-        <div class="rellax os" id="o8" data-rellax-speed="-.75">&#65518;</div>
-        <div class="rellax os" id="o9" data-rellax-speed="-1">&#65518;</div>
-        <div class="rellax os" id="o10" data-rellax-speed="-.5">&#65518;</div>
-        <div class="rellax os" id="o11" data-rellax-speed="-3">&#65518;</div>
-        <div class="rellax os" id="o12" data-rellax-speed="-1">&#65518;</div>
-        <div class="rellax os" id="o13" data-rellax-speed="-1">&#65518;</div>
-        <div class="rellax os" id="o14" data-rellax-speed="-.5">&#65518;</div>
-        <div class="rellax os" id="o15" data-rellax-speed="-2">&#65518;</div>
-        <div class="rellax os" id="o16" data-rellax-speed="-.5">&#65518;</div>
-        <div class="rellax os" id="o17" data-rellax-speed="-2">&#65518;</div>
-        <div class="rellax os" id="o18" data-rellax-speed="-.5">&#65518;</div>
-        <div class="rellax os" id="o19" data-rellax-speed="-2">&#65518;</div>
-        <div class="rellax os" id="o20" data-rellax-speed="-.5">&#65518;</div>
-    </section>
 
-    <section class="resp">
-        <header>
-            <div id="circ">&#65518;</div>
-            <h1>Reading Retorts</h1>
-            <div id="circ">&#65518;</div>
-        </header>
-
-        <div id="r1">
-            <h2>Scary Accurate Predictions from 1945</h2>
-            <hr />
-            <p>
-                <a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_blank">As We May Think</a>, and article published in 1945 by Vannevar Bush, offers a peculiarly accurate glimpse into the future, accurately predicting a variety of technologies used on a daily basis today. Vannevar Bush was an immensely powerful and influential scientist and engineer, responsible for an impressive number of scientific inventions, primarily intended for government / military operations. Most notably of these were microwave based radar, and the infamous atomic bomb (Britannica). Along with this, Bush played a major role in encouraging the continued cooperation and codependence of the government on scientific research, and subsequently the government funding of said research. This was achieved through the founding of the NDRC (National Defence Research Committee), in 1939 under the Roosevelt administration.
-            </p><br>
-            <p>
-                Bush begins the article by analyzing the post war attitudes of the various scientific silos, and specifically how some were far more capable of adapting to peace time than others. At the time, many people did not understand the importance of the sciences, and blamed scientists (or “technocrats”) for the great depression (Britannica). Frequently, scientific theorists are ahead of their time, with feasible and rational concepts, but without the resources and support to execute them. Bush points out an occurrence of this over two centuries prior; Liebnitz’s calculator. While the idea was sound, the costs outweighed the benefits in the eyes of his benefactors, and thus the device wasn’t produced until much later in the future. Bush uses this anecdote to open the mind of the reader and set the stage for his own predictions. In doing this, he sways the reader that while his ideas may seem immensely outlandish, nothing is outside the realm of possibility, if we consider the struggles of the great thinkers of the past, who were more often than not shunned for their accurate predictions of the future.
-            </p><br>
-            <p>
-                He first predicts “dry” photography, then wearable cameras followed by digitized dictation, rapid autonomous computation, and finally: the “memex”. All of these predictions have come true in one way or another. Dry photography: now known as a polaroid, wearable cameras: a common site on a ski hill, digitized dictation is now standard in most smartphones and laptops (which also rely and rapid autonomous computation), and of course the “memex", which is now known more commonly as the desktop computer. As scarily accurate as these predictions are, their biggest shortcoming is Bush’s comprehension of the way in which data is stored. Rather than improving on the the microfiche to become compact and more efficient, science turned towards electric data storage in a digitized binary system. From it’s inception, devices used to store this data have increased in the scopes of data they can contain, and decreased in size. This type of storage is so radically different than the microfiche that it simply could not be predicted by Bush. This leads to an important distinction to be made in the discourse of scientific progress: the difference between a progressive advancement and an invention. The latter being far harder to come by than the former. Inventions like the digitization of data are the rarer moments that mark significant chapters in world history. Thinkers like Vannevar Bush are not uncommon, and while this article is from 1945, it serves as a reminder to maintain an open mind in the face of scientific progress, and that the next major scientific advancement could very well be something wholly unexpected, perhaps event entirely beyond the realm of computation.
-            </p><br>
-        </div>
-
-        <div id="r2">
-            <h2>Wartime Secrets to Peacetime Advances</h2>
-            <hr />
-            <p>
-                In an excerpt from his book <a href="https://arstechnica.com/tech-policy/2011/02/how-the-atom-bomb-gave-birth-to-the-internet/3/" target="_blank">“A History of the Internet and the Digital Future”</a>, Johnny Ryan breaks down the most important elements that led to the inception of the internet, and also brings to light the number of conditions that needed to be lined up in order for the internet to succeed in the fashion that it did. Ryan spends the first third of the excerpt emphasizing the extreme tensions of the cold war. Most impactful in this section was the “schedule” of events of a nuclear strike in the United States, which highlights the millions of people that could be dead based on the various decisions of president Kennedy. Overall, these plans all felt like “worst case scenarios”, and this was in part a product of the limited communication systems of the era. It was agreed upon early on in the Cold War era that a more resilient communications system was essential for even a shred of survival to be possible.
-            </p><br>
-            <p>
-                After a great deal of pushback and controversy, the ARPANET was eventually born. While the technology and the theory of a centrifugal system is immensely impressive (the first of its kind), what stood out to me was the emphasis on the cost cutting potential of such a massive system. Without dependence of individual relay points in the network, the quality of parts could decrease significantly. This is a historical marker of two major cultural shifts in the U.S. The first: the beginning of the era of outsourcing in the U.S., cheaper parts meant the U.S. could easily outsource the production of relay points, internet hardware, etc. to various manufacturers in Asia, an activity still widely practiced today. The second (on the same vein as outsourcing production): planned obsolescence. The concept was already wildly prevalent in the automotive industry, and quickly spreading to other industries, but given the timeline of the invention of the internet. Ryan’s points suggest a clear path that planned obsolescence in consumer technologies was fast-tracked thanks to the invention of the internet.
-            </p><br>
-            <p>
-                Ryan finishes the excerpt by recounting the history of RAND and argues that this type of unrestricted R&amp;D was another key component in the invention of the internet. Prior to RAND, research was focused, secretive &amp;somewhat elitist. RAND encouraged a more open form of research (a precursor to more contemporary “think tanks”), and even accepted ideas and suggestions from the public, with several ideas from the public eventually becoming technology we consider commonplace today. The principles of RAND were in a way socialist, in that research and progress is everyone’s responsibility, and equally, the fruits of this research should, and in the case of the internet did become the property of the the masses. The internet marked the beginning of open source technology to a degree, and the attitudes of public technology at RAND are still very much alive today.
-            </p><br>
-        </div>
-
-        <div id="r3">
-            <h2>History in the Digital Age</h2>
-            <hr />
-            <p>
-                Roy Rosenzweig’s <a href="http://santoromano.com/readings/internethistory.pdf" target="_blank">“Wizards, Bureaucrats, Warriors &amp;Hackers: Writing the History of the Internet”</a> was a journal article published in 1998 covering the diverse and complex history of the founding of the internet. The article takes the form of a multidisciplinary article review; breaking down and analyzing the various academic accounts of how the internet came to be. In doing this, Rosenzweig paints a fairly impartial picture of this history, while simultaneously pointing out the biases in other writers works pertaining to the topic. The first of these “responses” is to Hafner &amp;Lyon’s “Where Wizards Stay Up Late: The Origins Of The Internet” published in the same year. In contrast to previous course readings, Hafner &amp;Lyon focus on a contract from BNN (a consulting firm) that entailed the development of a way to make the computer systems at ARPA communicate with each other despite using different operating systems and languages. The end goal of this contract was to encourage information sharing and communication between ARPA departments. As mentioned, this varies drastically from the goal of developing a “nuclear proof” communications system. This duality of origins is repeated in the remaining texts that Rosenzweig discusses: internet for military use (to produce a robust private communication system to carry out military operations and surveillance) and internet for public use (to foster a new age of information sharing and communication, an unmoderated public forum). The former being firmly supported in Paul Edwards’s book “The Closed World: Computers and the Politics of Discourse in Cold War America”, in which Edwards wrote that the computer and the internet were both products of the cold war, made to further the “closed-world discourse”, a concept he describes as “the language, technologies, and practices that together supported the visions of centrally controlled, automated global power at the heart of American Cold War politics.” In essence, Edwards is describing a militarized United States, that depends on the Internet and computers as a means of keeping its citizens under monitor and in control. While this discourse may have gained traction in places like ARPA, it marks a polar opposite of what the internet came to be. </p><br>
-            <p>
-                In summary, Rosenzweig recounts how the internet as we know it today was made by the public, in the form of “Usenet”: a system developed by Duke University students in an attempt to give the public what the military had with Arpanet. The anti-war and open world attitudes of the 60’s and 70’s had a profound impact on the development of the internet, leading to the creation of an alternative, counter culture attitude of internet freedom. A primary example of this attitude was Berkeley’s Community Memory project, which was a publicly shared computer network with full access to the majority of networks operating in the U.S. These attitudes continued to develop along with technological advances to create the vast internet we’re familiar with today. What is most pertinent in Rosenzweig’s article is the idea of the “closed world” and the “open world”, elements of both are still readily present in todays world, in a fashion that feels somewhat like a poorly balanced seesaw. It is important to remain vigilant of threats to our open world on the internet. One excellent contemporary example of the closed world discourse was the vote for net neutrality, which threatened our rights as users to use the internet without restriction. While the threats have been (mostly) mitigated, it is our responsibility as digital citizens to continue to fight for our open world, and shut down anything that attempts to close it.
-            </p><br>
-        </div>
-
-        <div id="r4">
-            <h2>We're all junkies.. FOR KNOWLEDGE!</h2>
-            <hr />
-            <p>
-                A truly effective article is one that really makes the reader think, encourage introspection, and in some cases, even promote change. Nicholas Carr’s <a href="https://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/306868/" target="_blank">“Is Google Making Us Stupid?”</a> Is a perfect example of this. In his article, he presents the idea that the immediate access to a wealth of information on the internet is slowly but surely reprogramming how we read, process information, and essentially how we think. This notion isn’t unwarranted either, he supports his concepts with testimonials from a wealth of other writers and bloggers that claim to have experienced related symptoms. One writer, Bruce Friedman, exclaims that he can’t sit down to read “War and Peace” anymore (and while War and Peace is a 587,287 word mammoth, Freidman still makes a valid point). With the immediate access to so much information, with so little effort, why should our brains maintain the channels necessary for long form reading comprehension? Especially if we “no longer” need them. Carr points out that our brains are plastic, extremely malleable, and constantly reconfiguring and readapting based on external stimuli. Given these points, it's not so far fetched to think that google, and my extension the internet is changing how we think. However, “stupid” is not necessarily the right term to be using.</p><br>
-            <p>
-                As a society, we continue to progress forward at a rapid pace, both technologically and (sometimes) socially. Google is in no way sending us back to the stone age, on the contrary, search engines and the age of the internet is slowly causing a human evolution to occur. To remain impartial, Carr points out how our fear of the internet is no different than the fear of the printing press, or even earlier, Plato’s fear of the advent of writing. While both of those fears were somewhat warranted, the scholars who were apprehensive of these advances could not have anticipated the positive changes these devices would have on the world, and the same narrative rings true for the internet. What makes the latter invention so different from its predecessors is the speed of the internet. As a species, humans are pleasure seeking, our brains reward us with dopamine when we perceive something as going well, or acquire what we desire. Google seeks to support this instant gratification complex by supplying us with “exactly” what we want at breakneck speeds.</p><br>
-            <p>
-                To a degree, our affliction with the Internet is not all that different from a drug addiction. Opiates cause our brains to release higher levels of dopamine, with little to know effort at all, our brains begin to associate said opiate with pleasure, and overtime develop a dependancy on the drug, inhibiting the production of dopamine without the drug present in the brain. Googles search results are in a way hits of dopamine, in which we are pleased to find what we need, and the action required very little effort, thus, we become dependant on Google searches to discern information, and slowly loose the ability to do so through other means. While the future of the Internet and our connection to it is uncertain, Carr’s article invites the startling realization that we are certainly loosing “something”. We stand at a crossroads between maintaining our ability for deep reading and research “by hand” or embracing the internet to its fullest extent as we evolve into citizens of the future.
-            </p><br>
-        </div>
-
-        <div id="r5">
-            <h2>I think I'm being watched. . . by exactly 105 people.</h2>
-            <hr />
-            <p>
-                Alexis C. Madrigal’s article, <a href="https://www.theatlantic.com/technology/archive/2012/02/im-being-followed-how-google-151-and-104-other-companies-151-are-tracking-me-on-the-web/253758/" target="_blank">I'm Being Followed: How Google—and 104 Other Companies—Are Tracking Me on the Web</a>, sheds light on an interesting and critically undiscussed aspect of the online surfing experience: data collection. While anyone with a bit of web knowledge (myself included), understand the concept of data collection, Madrigal reveals that the extent to which our data is collected is more than one might think. Online data collection is a vast interconnected web of subsidiary companies, all vying for a small piece of our internet history. There are pros and cons to data collection of this nature, it creates a platform for independent companies and small businesses to monopolize their traffic to pay for and expand their online presence. However, to access these websites, users are in turn expected to relinquish their online anonymity. How did this happen? Almost as soon as the internet was “opened” in the mid 90’s for public use, hosting companies like GeoCities and Angelfire opened up shop in 1995. Web servers are a large investment, and expensive to maintain. These companies offered to host your website for a small fee, competition quickly grew, and these prices inflated astronomically, eventually resulting in the current internet landscape we’re faced with today.
-            </p><br>
-            <p>
-                As a result of this complex landscape, two primary varieties of data control services were invented to allow users to regain some of their autonomy. The first was data collection blocking plugins, which do exactly as they say. They mask your online presence, such that while websites may still record data from your visit, there’s no presence for them to link that data, rendering it useless. Madrigal introduces “Do Not Track Plus” as an option, but other options like DuckDuckGo, TorBroswer, and even built in settings are appearing. The second form of data control service which has gained massive popularity over the couple of years are ad-blockers. In this situation, a users data is still collected and used, but the user won’t witness or experience any of the ads tailored to them, as a result, websites loose their ad revenue. Both options are appealing from an individual user perspective, but they significantly disrupt the online advertising economy. In quote in the article “The best minds of my generation are thinking about how to make people click ads”, in essence, data collection and blocking acts like one very complicated game of cat and mouse.
-            </p><br>
-            <p>
-                Near the end of the article, Madrigal takes on a more serious tone. Presenting the notion that our browsing data could be used for more serious things, like immigration, health insurance, and even your credit score. Currently this isn’t the case, but there exists a very thing legal wall stopping data collection companies from doing this. While it may seem unethical today, it’s impossible to tell what the future will hold for data collection. The internet is just as much of a wild west today as it was in its infancy.
-            </p><br>
-        </div>
-
-        <div id="r6">
-            <h2>Ajit Pai: The Internet's Most Punchable Face</h2>
-            <hr />
-            <p>
-                Quincy Larson’s <a href="https://www.freecodecamp.org/news/inside-the-invisible-war-for-the-open-internet-dd31a29a3f08/" target="_blank">The future of the open internet — and our way of life — is in your hands</a>, is a powerful article. It begins by breaking down the somewhat confusing backstory of net neutrality, along with a crash course on how the internet functions today, and finishing with the urgent importance of fighting for and supporting net neutrality. In a nutshell, net neutrality is the concept that all data on the internet must be treated equally, an internet service provider cannot charge extra for certain types of information, or throttle other forms of data based on its content. The system we currently have is something called the “open internet” wherein everything is neutral and treated equally. However, ISP’s are fighting to end this neutrality, and creating one more way to monetize its internet user’s experiences. Larson places the blame for the current situation on something Harvard law professor Tim Wu has coined “The Cycle”. Within this cycle, the internet is stuck in a significant period of stagnation, as no “new” technology has come to replace it. Theoretically speaking, some new form of information technology presenting itself would give service companies a new thing to monopolize and control, thereby reducing the immense pressure on the FCC to kill net neutrality. The challenge is, many experts see the internet as the rational foreseeable end of information technology, there’s no way for us to become more connected that doesn’t fundamentally change the existing internet.
-            </p><br>
-            <p>
-                The most recent tensions surrounding net neutrality surfaced in 2017, with the election of Ajit Pai as chairman of the FCC. Who began to roll back may of the Obama era regulations, which attempted to limit the power of the FCC, and took steps towards legally reclassifying the Internet as a public good rather than an information or telecommunications service. A classification such as this is all too reasonable, the Internet has grown beyond what any of its founders could have imagined. As a result, those who can’t afford internet access are cut off from the world in more ways than one. And this withholding of access can have the blame placed on two companies almost exclusively: Verizon and AT&amp;T, who collectively control 2/3 of Internet access. They’ve driven the price up of internet since their founding, and have run out of ways to further monetize our access, so the next logical step is to pressure the FCC into changing the laws surrounding net neutrality, to open up an entirely new revenue stream.
-            </p><br>
-            <p>
-                Fighting net neutrality is an extremely important step in maintaining our collective access to something that should be a public good, freely accessible to all. So far, public opinion has managed to maintain net neutrality in the U.S. and there’s been no question of it in Canada. The near miss in the U.S. is an important reminder of the necessity to be ready to fight for an open internet as ISP’s only continue to grow in size and power.
-            </p><br>
-        </div>
-    </section>
-
-
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-migrate-3.1.0.min.js" integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
 </body>
-<script src="js/scroll.js"></script>
+
 <script>
-    var rellax = new Rellax('.rellax');
-</script></html>
+    AOS.init();
+
+</script>
+<script src="js/scroll.js"></script>
+
+</html>
