@@ -76,6 +76,22 @@ body {
     overflow-x: hidden;
 }
 
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    font-family: b2;
+    font-size: 12vw;
+    color: cyan;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    
+}
+
 .splash {
     min-height: 100vh;
     height: auto;

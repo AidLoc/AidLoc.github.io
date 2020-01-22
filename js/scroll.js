@@ -42,3 +42,12 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+function load() {
+  page = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("cover").style.display = "none";
+}
