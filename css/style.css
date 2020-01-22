@@ -184,7 +184,7 @@ body {
 }
 
 .fofa {
-    background-image: url(../images/fofa/dancer-final.jpg);
+    background-image: url(../images/fofa/dwind.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 130%;
@@ -288,6 +288,24 @@ body {
     color: white;
     cursor: pointer;
 }
+
+.oc {
+    width: 30vw;
+    height: auto;
+}
+
+.oc img{
+    max-height: 100%;
+    display: block;
+}
+
+#monstr .oc{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+
 
 
 /*@media(min-width: 850px) {

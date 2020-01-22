@@ -28,7 +28,8 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     center: true,
-    stagePadding: 50,
+    autoWidth: true,
+    items: 3,
     responsive: {
         0: {
             items: 1
