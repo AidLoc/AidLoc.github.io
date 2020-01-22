@@ -5,6 +5,10 @@
     overflow-x: hidden;
 }
 
+.example::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
     font-family: b1;
     src: url("../images/Barlow-BlackItalic.ttf");
