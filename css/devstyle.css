@@ -2,72 +2,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
-body {}
-
-section {
-    width: 100vw;
-    height: 100vh;
+a {
+    text-decoration: none;
 }
 
-navcont {
+
+@font-face {
+    font-family: b1;
+    src: url("../images/Barlow-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: b2;
+    src: url("../images/Barlow-ThinItalic.ttf");
+}
+
+@font-face {
+    font-family: b3;
+    src: url("../images/Barlow-Medium.ttf");
+}
+
+@font-face {
+    font-family: b4;
+    src: url("../images/Barlow-ExtraLight.ttf");
+}
+
+
+
+.dev {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    background-color: black;
+}
+
+.dev h1 {
+    margin-left: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    color: white;
+    font-family: b1;
+    font-size: 10vw;
+}
+
+#indi {
+    width: 85%;
+    height: auto;
+    position: relative;
+    margin-left: 5vw;
+}
+
+#devc {
     display: flex;
-    position: fixed;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
 }
 
-nav {
-    position: fixed;
-    left: 97%;
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr, 4);
-    justify-items: center;
-    overflow: hidden;
+#devc img {
+    width: 40vw;
+    height: auto;
+    padding: 1vw;
 }
 
-#cont {
-    height: 200vh;
+#devc2 {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#devc2 img {
+    width: 40vw;
+    height: auto;
+    padding: 1vw;
+}
+
+#devc2 video {
+    width: 40vw;
+    height: auto;
+    padding: 1vw;
+}
+
+h2 {
+    margin-left: 5vw;
+    padding-bottom: 3vw;
+    color: white;
+    font-family: b3;
+    font-size: 5vw;
+}
+
+#content {
+    position: relative;
     width: 80vw;
-    border: 1px solid white;
-    overflow-y: scroll;
+    height: auto;
+    margin-left: 5vw;
+    padding-bottom: 30vh;
 }
 
-.dot {
-    height: 10px;
-    width: 10px;
-    background-color: black;
-    border-radius: 50%;
-    display: block;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    z-index: 2;
-    align-self: center;
-    grid-column: 1;
-}
-
-.dot:hover {
-    background-color: white;
-    cursor: pointer;
-}
-
-#A {
-    background-color: yellow;
-}
-
-#B {
-    background-color: black;
-}
-
-#C {
-    background-color: red;
-}
-
-#D {
-    background-color: green;
+p {
+    color: white;
+    font-family: b4;
+    font-size: 2vw;
 }

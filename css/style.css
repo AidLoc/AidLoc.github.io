@@ -6,7 +6,7 @@
 }
 
 .example::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 @font-face {
@@ -37,8 +37,7 @@
     width: 100vw;
     background-color: rgb(20, 20, 20);
     color: white;
-    display: none;
-    /* temporarily disabled*/
+    display: flex;
     justify-content: space-around;
     align-items: center;
     top: 0vw;
@@ -93,7 +92,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 20;
-    
+
 }
 
 .splash {
@@ -282,11 +281,11 @@ body {
     text-align: justify;
 }
 
-#fofa p{
+#fofa p {
     font-size: 1.25vmax;
 }
 
-#fofa h1{
+#fofa h1 {
     font-size: 3vmax;
     margin-bottom: 2vh;
 }
@@ -314,17 +313,16 @@ body {
     height: auto;
 }
 
-.oc img{
+.oc img {
     max-height: 100%;
     display: block;
 }
 
-#monstr .oc{
+#monstr .oc {
     max-height: 100%;
     max-width: 100%;
     display: block;
 }
-
 
 
 
