@@ -54,6 +54,14 @@ a {
     margin-left: 5vw;
 }
 
+#indi2 {
+    width: 50%;
+    height: auto;
+    position: relative;
+    margin-left: 5vw;
+    align-self: flex-start;
+}
+
 #devc {
     display: flex;
     flex-flow: row wrap;
@@ -97,14 +105,30 @@ h2 {
 
 #content {
     position: relative;
-    width: 80vw;
+    width: 85%;
     height: auto;
     margin-left: 5vw;
     padding-bottom: 30vh;
+}
+
+#content2 {
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin-left: 5vw;
+    padding-bottom: 10vh;
 }
 
 p {
     color: white;
     font-family: b4;
     font-size: 2vw;
+    line-height: 1.6;
+}
+
+#bio {
+   display: flex;
+   flex-flow: row nowrap;
+   width: 90vw;
+    
 }

@@ -1,7 +1,7 @@
 $(".grid-item").click(function () {
     var item = "#" + $(this).attr('class').split(" ").pop();
     console.log(item);
-    
+
     if ($(".port").hasClass('togg')) {
         $(item).removeClass('togg');
     } else {
@@ -21,6 +21,18 @@ $(".close").click(function () {
     var item2 = $(this).parents('.port');
     $(item2).removeClass('togg');
     console.log(item2);
+});
+
+$("#dev-btn").click(function () {
+    window.location.href = 'development.html';
+});
+
+$("#mood-btn").click(function () {
+    window.location.href = 'dev.html';
+});
+
+$("#narr-btn").click(function () {
+    window.location.href = 'Narrative.html';
 });
 
 
@@ -45,9 +57,9 @@ $('.owl-carousel').owlCarousel({
 
 
 function load() {
-  page = setTimeout(showPage, 3000);
+    page = setTimeout(showPage, 3000);
 }
 
 function showPage() {
-  document.getElementById("cover").style.display = "none";
+    document.getElementById("cover").style.display = "none";
 }

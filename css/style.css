@@ -72,6 +72,28 @@
     cursor: pointer;
 }
 
+#dev-btn {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#devwrapper {
+    height: 0;
+    width: 5vw;
+    transition: all 1s ease-in-out;
+}
+
+#dev-btn:hover > #devwrapper {
+    height: auto;
+}
+
+#db {
+    color: black;
+    padding: .5vw;
+}
+
 
 body {
     font-family: b3;
