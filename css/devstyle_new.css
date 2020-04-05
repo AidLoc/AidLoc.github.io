@@ -29,44 +29,84 @@ a {
     src: url("../images/Barlow-ExtraLight.ttf");
 }
 
-section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior-x: none;
+}
+
+#home {
+    height: 100%;
+    position: relative;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    background-color: orange;
     font-family: b1;
     font-size: 12vmax;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    padding-top: 20vh;
+    width: 25vw;
+}
+
+#home img:hover {
+    transition: all 1s ease-in-out;
+    width: 26vw;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+    border: 1px solid red;
 }
 
 #open {
+    text-align: center;
     color: white;
     background-color: black;
-}
-
-#main {
-    color: black;
-    background-color: white;
-    height: 100vh;
-    width: 700vw;
-}
-
-#main > div {
-    overflow-x: scroll;
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid red;
-    text-align: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     font-family: b1;
     font-size: 12vmax;
 }
 
 #p {
-    width: 100vw;
-    height: 100vh;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-family: b1;
+    font-size: 12vmax;
+}
+
+.pinfo {
+    width: 10vw;
+    padding-top: 20vh;
+}
+
+.pinfo:hover {
+    transition: all 1s ease-in-out;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+
+/* -- Project -- */
+
+.hide {
+    display: none !important;
+}
+
+.A section{
+    text-align: center;
+    color: white;
+    background-color: green;
+    font-family: b1;
+    font-size: 12vmax;
 }
