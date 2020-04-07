@@ -106,20 +106,7 @@ section {
 .A section{
     text-align: center;
     color: white;
+    background-color: green;
     font-family: b1;
     font-size: 12vmax;
 }
-
-.SlideA {
-    background-color: orange;
-}
-
-.SlideB {
-    background-color: deepskyblue;
-}
-
-.SlideC {
-    background-color: orange;
-}
-
-

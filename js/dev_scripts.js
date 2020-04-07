@@ -31,10 +31,8 @@ $(".pinfo").click(function () {
             keyboard: false,
             direction: 'vertical'
         });
-        $(".pages").hide("ops-container");
         $(".A").removeClass("hide");
-        $("#home").addClass("hide");
-        
+        $(".pages").removeClass("ops-container");
         
         
     } else if (currentPage == 3) {
