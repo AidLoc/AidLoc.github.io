@@ -1,49 +1,96 @@
-var togg = true;
+window.togg;
 
-$(".enter").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".pages").offset().top
-        },
-        1750);
+$(function setup() {
     onepagescroll('div.pages', {
         pageContainer: 'section',
-        animationType: 'ease-in-out',
-        animationTime: 1000,
+        animationType: 'ease',
+        animationTime: 1250,
         infinite: false,
-        pagination: togg,
+        pagination: true,
         keyboard: false,
         direction: 'horizontal'
     });
+
+    $(".A").fadeOut(10);
+    $("#nav").slideToggle(1);
+    togg = false;
+    var A = $("#point").position().left;
+    var B = $(".last").position().left;
+
+
 });
 
-var proj;
 
 $(".pinfo").click(function () {
+    togg = false;
+    console.log(pages.length);
+    console.log(currentPage);
+    window.proj;
     if (currentPage == 2) {
-        togg = false;
         proj = (".A");
-        onepagescroll('div.A', {
-            pageContainer: 'section',
-            animationType: 'ease-in-out',
-            animationTime: 1000,
-            infinite: false,
-            pagination: false,
-            keyboard: false,
-            direction: 'vertical'
-        });
-        $(".A").removeClass("hide");
-        $(".pages").removeClass("ops-container");
-        
-        
     } else if (currentPage == 3) {
         proj = (".B");
     } else if (currentPage == 4) {
         proj = (".C");
+    } else if (currentPage == 5) {
+        proj = (".D");
+    } else if (currentPage == 6) {
+        proj = (".E");
+    } else if (currentPage == 7) {
+        proj = (".F");
     }
 
-    console.log(proj);
-    $('html,body').animate({
-            scrollTop: $(proj).offset().bottom
-        },
-        1750);
+    $("#nav").slideUp(1000);
+    $(".pages").fadeOut(1000)
+    $(proj).fadeIn(1000);
+    console.log(togg);
 });
+
+$(".return").click(function () {
+    togg = true;
+    $("#nav").slideDown(1000);
+    $(".pages").fadeIn(1000);
+    $(proj).fadeOut(1000);
+    console.log(togg);
+});
+
+
+//navigation via pagination
+function navi(hr) {
+    console.log(hr);
+    var incr = (hr - currentPage);
+    if (hr > currentPage) {
+        changePage(pages.length, 1, incr);
+    } else if (hr < currentPage) {
+        changePage(1, pages.length, incr);
+    }
+}
+
+$("#point").draggable({
+    axis: 'x',
+    containment: "parent",
+    snap: true
+});
+
+
+$(window).mouseup(function () {
+            A = $(".drg").position().left;
+            B = $(".last").position().left;
+            ratio = (A / B) * 100
+
+
+            console.log(A + " " + B);
+
+            if (ratio >= 80) {
+                togg = true;
+                $(".drg").draggable('disable');
+                $(".drg").fadeOut(1250);
+                changePage(pages.length, 1, 1);
+                $("#nav").slideDown(1250, function(){
+                    $(".drg").css("left", "0");
+                });
+            }
+    });
+
+        //$('a[href$="ABC"]')
+        //var c = '#' + Math.floor(Math.random() * 16777215).toString(16);

@@ -11,22 +11,22 @@ a {
 
 @font-face {
     font-family: b1;
-    src: url("../images/Barlow-BlackItalic.ttf");
+    src: url("../fonts/AUTHENTICSans-150.otf");
 }
 
 @font-face {
     font-family: b2;
-    src: url("../images/Barlow-ThinItalic.ttf");
+    src: url("../fonts/AUTHENTICSans-130.otf");
 }
 
 @font-face {
     font-family: b3;
-    src: url("../images/Barlow-Medium.ttf");
+    src: url("../fonts/AUTHENTICSans-90.otf");
 }
 
 @font-face {
     font-family: b4;
-    src: url("../images/Barlow-ExtraLight.ttf");
+    src: url("../fonts/AUTHENTICSans-60.otf");
 }
 
 html,
@@ -36,53 +36,133 @@ body {
     overscroll-behavior-x: none;
 }
 
+#nav {
+    padding: 2vw;
+    width: 100%;
+    height: 14%;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 1) 10%, rgba(20, 20, 20, 0) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-blend-mode: multiply;
+}
+
+#title {
+    color: white;
+    font-family: b3;
+    font-size: 2vmax;
+    margin-left: 6vw;
+    text-align: center;
+}
+
+#logo {
+    width: 5vw;
+    height: auto;
+    z-index: 15;
+}
+
 #home {
     height: 100%;
     position: relative;
     text-align: center;
     color: white;
-    background-color: orange;
+    background-image: url(../images/lofi/lowind.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.75);
+    z-index: 3;
+}
+
+#hbox {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    left: 18vh;
+    top: 25vh;
+    width: 75vw;
+    z-index: 4;
+    color: white;
+    text-align: left;
+}
+
+#hbox h2 {
+    font-size: 2vmax;
+    white-space: nowrap;
+    font-family: b3;
+}
+
+#hbox h1 {
+    font-size: 8vmax;
+    white-space: nowrap;
     font-family: b1;
-    font-size: 12vmax;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
 }
 
-#home img {
-    padding-top: 20vh;
-    width: 25vw;
+#hbox p {
+    font-size: 1.5vmax;
+    font-family: b4;
 }
 
-#home img:hover {
-    transition: all 1s ease-in-out;
-    width: 26vw;
-    cursor: pointer;
+#sq {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 12vw;
+    height: auto;
 }
 
-section {
+#slider {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: column wrap;
-    border: 1px solid red;
+    flex-flow: row nowrap;
+    bottom: 15vh;
+    left: 18vh;
+    width: 55vw;
+    height: 10vh;
+    z-index: 4;
 }
 
-#open {
-    text-align: center;
-    color: white;
-    background-color: black;
-    font-family: b1;
-    font-size: 12vmax;
+#s {
+    width: 1vw;
+    height: 1vw;
+    background-color: white;
+    border-radius: 35%;
+}
+
+#point {
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    transform: rotate(-90deg);
+    top: 0 !important;
+}
+
+.pages section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
 }
 
 #p {
     text-align: center;
-    color: black;
-    background-color: white;
+    color: white;
     font-family: b1;
     font-size: 12vmax;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
 .pinfo {
@@ -96,17 +176,79 @@ section {
     cursor: pointer;
 }
 
-
-/* -- Project -- */
-
-.hide {
-    display: none !important;
+.smt {
+    background-image: url(../images/smt/sky.png);
 }
 
-.A section{
-    text-align: center;
-    color: white;
-    background-color: green;
-    font-family: b1;
-    font-size: 12vmax;
+.lofi {
+    background-image: url(../images/lofi/lowind.jpg);
+}
+
+.fofa {
+    background-image: url(../images/fofa/dwind.jpg);
+}
+
+.karel {
+    background-image: url(../images/karel/kawind.png);
+}
+
+.dida {
+    background-image: url(../images/dida/posterprint.jpg);
+}
+
+.illu {
+    background-image: url(../images/illu/brain-01.png);
+}
+
+
+
+
+/*-- detail sections --*/
+
+.return {
+    width: 10%;
+}
+
+.return:hover {
+    transition: all 1s ease-in-out;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.invert {
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+}
+
+.inf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100vw;
+    height: auto;
+    overflow: scroll !important;
+}
+
+.inf div {
+    height: 100vh;
+    width: 100vw;
+}
+
+.tba {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.tbb {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
 }

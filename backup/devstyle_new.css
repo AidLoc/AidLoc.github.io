@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: b1;
+    src: url("../images/Barlow-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: b2;
+    src: url("../images/Barlow-ThinItalic.ttf");
+}
+
+@font-face {
+    font-family: b3;
+    src: url("../images/Barlow-Medium.ttf");
+}
+
+@font-face {
+    font-family: b4;
+    src: url("../images/Barlow-ExtraLight.ttf");
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior-x: none;
+}
+
+#home {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    font-family: b1;
+    font-size: 12vmax;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    padding-top: 20vh;
+    width: 25vw;
+}
+
+#home img:hover {
+    transition: all 1s ease-in-out;
+    width: 26vw;
+    cursor: pointer;
+}
+
+.pages section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    border: 1px solid red;
+}
+
+#open {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: b1;
+    font-size: 12vmax;
+}
+
+#p {
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-family: b1;
+    font-size: 12vmax;
+}
+
+.pinfo {
+    width: 10vw;
+    padding-top: 20vh;
+}
+
+.pinfo:hover {
+    transition: all 1s ease-in-out;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+
+/* -- Project -- */
+
+.hide {
+    display: none !important;
+}
+
+.A section{
+    text-align: center;
+    color: white;
+    border: 1px solid red;
+    font-family: b1;
+    font-size: 12vmax;
+}
+
+.slideA {
+    background-color: blue;
+}
+
+.slideB {
+    background-color: orange;
+}
+
+
+.slideC {
+    background-color: blue;
+}
+
+.A img{
+    width: 10vw;
+    padding-top: 20vh;
+    transform: rotate(180deg);
+}
+

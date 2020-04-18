@@ -4,9 +4,10 @@
  * Fork this script on github https://github.com/mystika/onepagescroll
  * http://mystika.me
  */
+window.togg = true;
 
 function onepagescroll(selector, options) {
-    var pages = [];
+    window.pages = [];
     window.currentPage = 1;
     var isPageChanging = false;
     var keyUp = {
@@ -31,6 +32,7 @@ function onepagescroll(selector, options) {
     var setting = extend({}, def, options);
 
     /* initialization */
+
     function init() {
 
         window.addEventListener('wheel', onScrollEventHandler);
@@ -62,13 +64,19 @@ function onepagescroll(selector, options) {
             bullet_list_container.classList.add('ops-navigation');
         }
 
-        var index = 1;
+        window.index = 1;
+
+        //var sel = +":not(.asd)";
+
+        //selector + ' > ' + setting.pageContainer
+
 		[].forEach.call(document.querySelectorAll(selector + ' > ' + setting.pageContainer), function (obj) {
             if (setting.pagination) {
                 var bullet_list = document.createElement('li');
                 var bullet = document.createElement('a');
                 bullet.setAttribute('data-targetindex', index);
-                bullet.href = '#';
+                bullet.href = "#" + index;
+                bullet.setAttribute('onclick', "navi(" + index + ")")
                 bullet_list.appendChild(bullet);
                 bullet_list_container.appendChild(bullet_list);
             }
@@ -87,7 +95,8 @@ function onepagescroll(selector, options) {
         });
 
         if (setting.pagination) {
-            document.body.appendChild(bullet_list_container);
+            var place = document.getElementById("nav");
+            place.appendChild(bullet_list_container);
             document.querySelector('a[data-targetindex="' + currentPage + '"]').classList.add('active');
         }
 
@@ -95,13 +104,33 @@ function onepagescroll(selector, options) {
     }
 
     /* wheel event handler */
-    function onScrollEventHandler(e) {
-        if (e.wheelDelta > 0) {
+    window.onScrollEventHandler = function (e) {
+
+
+        if (e.wheelDelta > 30 && togg == true) {
             changePage(1, pages.length, -1);
-        } else {
+
+        } else if (e.wheelDelta < -30 && togg == true) {
             changePage(pages.length, 1, 1);
         }
+
+
+        if (currentPage > 1 && togg == true) {
+            $("#nav").slideDown(1000);
+        }
+
+        if (currentPage == 1 && togg == true) {
+            $("#nav").slideUp(1000);
+            $
+        }
+
+        /*if (currentPage % 2 === 0) {
+            $(".ops-navigation").removeClass("invert")
+        } else {
+            $(".ops-navigation").addClass("invert");
+        }*/
     }
+
 
     /* dected transitions completion for block duplicated scrolling */
     function detectTransitionEnd() {
@@ -139,7 +168,7 @@ function onepagescroll(selector, options) {
     }
 
     //function for page transition
-    function changePage(compare, edge, increase) {
+    window.changePage = function (compare, edge, increase) {
         if (isPageChanging) return;
 
         if (currentPage == compare) {
@@ -166,7 +195,7 @@ function onepagescroll(selector, options) {
                 transform: 'translate3d(' + -(currentPage - 1) * 100 + '%,0,0)'
             });
         }
-    }
+    };
 
     /* swipe */
     var fpos = 0;
