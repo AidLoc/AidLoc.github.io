@@ -114,16 +114,6 @@ function onepagescroll(selector, options) {
             changePage(pages.length, 1, 1);
         }
 
-
-        if (currentPage > 1 && togg == true) {
-            $("#nav").slideDown(1000);
-        }
-
-        if (currentPage == 1 && togg == true) {
-            $("#nav").slideUp(1000);
-            $
-        }
-
         /*if (currentPage % 2 === 0) {
             $(".ops-navigation").removeClass("invert")
         } else {

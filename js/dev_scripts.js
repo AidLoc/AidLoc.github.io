@@ -85,10 +85,10 @@ $(window).mouseup(function () {
                 togg = true;
                 $(".drg").draggable('disable');
                 $(".drg").fadeOut(1250);
-                changePage(pages.length, 1, 1);
                 $("#nav").slideDown(1250, function(){
                     $(".drg").css("left", "0");
                 });
+                $("#home").slideUp(1250);
             }
     });
 

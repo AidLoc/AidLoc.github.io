@@ -60,10 +60,19 @@ body {
     text-align: center;
 }
 
-#logo {
+#logoH {
     width: 5vw;
     height: auto;
-    z-index: 15;
+    opacity: 0;
+}
+
+#logo {
+    position: fixed;
+    left: 1.5vw;
+    top: 1.5vw;
+    width: 5vw;
+    height: auto;
+    z-index: 999;
 }
 
 #home {
@@ -148,6 +157,10 @@ body {
     top: 0 !important;
 }
 
+
+
+/*-- Headers --*/
+
 .pages section {
     display: flex;
     justify-content: center;
@@ -200,10 +213,47 @@ body {
     background-image: url(../images/illu/brain-01.png);
 }
 
+#gbox {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    left: 18vh;
+    top: 25vh;
+    width: 50vw;
+    height: 40vh;
+    z-index: 4;
+    color: white;
+    text-align: left;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(2, 2, 2, 0.65) 28.19%, rgba(9, 9, 9, 0.51) 39.08%, rgba(21, 21, 21, 0.42) 46.99%, rgba(38, 38, 38, 0.33) 53.45%, rgba(61, 61, 61, 0.27) 59.02%, rgba(88, 88, 88, 0.2) 63.99%, rgba(121, 121, 121, 0.15) 68.5%, rgba(160, 160, 160, 0.1) 72.67%, rgba(203, 203, 203, 0.05) 76.5%, rgba(250, 250, 250, 0) 79.98%, rgba(255, 255, 255, 0) 80.34%);
+    background-blend-mode: exclusion;
+    padding: 1vw;
+    word-break: break-all;
+}
+
+#gbox h1 {
+    font-size: 6vmax;
+    white-space: nowrap;
+    font-family: b2;
+    margin: .5vh;
+}
+
+#gbox h2 {
+    font-size: 2vmax;
+    white-space: nowrap;
+    font-family: b3;
+}
+
+#hbox p {
+    font-size: 1.5vmax;
+    font-family: b4;
+}
+
 
 
 
 /*-- detail sections --*/
+
+
 
 .return {
     width: 10%;
