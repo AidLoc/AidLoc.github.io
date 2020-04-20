@@ -220,7 +220,7 @@ function onepagescroll(selector, options) {
         
         if (currentPage == 6) {
             $("#dbox").fadeOut(250, function () {
-                $("#date").text("Ongoing!");
+                $("#date").text("Ongoing");
                 $("#medium").text("Analogue & Digital Illustration, Concept Generation");
             }).fadeIn(250);
         }
