@@ -7,18 +7,22 @@
     <title>Aiden Locke</title>
     <link rel="stylesheet" href="css/devstyle_new.css">
     <link rel="stylesheet" href="css/onepagescroll.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
     <script src="js/touchpunch.js"></script>
+    <script src="js/jGravity.js"></script>
 </head>
 
 <body>
 
     <img src="images/assets/logo.png" alt="" id="logo">
+
+    <div id="dbox">
+        <h2 id="date">Winter 2019</h2>
+        <div></div>
+        <h2 id="medium">Photography, Book Design, Research Creation</h2>
+    </div>
 
     <div id="nav">
         <img src="images/assets/logo.png" alt="" id="logoH">
@@ -32,13 +36,18 @@
             <h1>LOCKE DESIGN</h1>
             <p>Hi there! My name is Aiden Locke, I’m a freelance designer specializing in print design, advertising, photography &amp; web design. Come check out some of my work: </p>
         </div>
-        <div id="slider">
-            <img src="images/assets/point.svg" id="point" class="drg" alt="">
-            <div id="s"></div>
-            <div id="s"></div>
-            <div id="s"></div>
-            <div id="s"></div>
-            <div id="s" class="last"></div>
+        <div id="sliderbox">
+            <div class="drg">
+                <img src="images/assets/point.svg" id="point" alt="">
+                <p>drag me!</p>
+            </div>
+            <div id="slider">
+                <div id="s"></div>
+                <div id="s"></div>
+                <div id="s"></div>
+                <div id="s"></div>
+                <div id="s" class="last"></div>
+            </div>
         </div>
     </section>
 
@@ -46,43 +55,54 @@
         <section id="p" class="smt">
             <div id="gbox">
                 <h1>Something About to Happen</h1>
-                <h2>The Story of The Suburbs</h2>
+                <h2>Photographic Series &amp; Research Project</h2>
+                <img src="images/assets/point.svg" alt="" class="pinfo">
             </div>
-
-            <img src="images/assets/arrow-2.svg" alt="" class="pinfo">
         </section>
 
         <section id="p" class="lofi">
             <div id="gbox">
                 <h1>Lofidelistism</h1>
-                <h2>Memory x Nostalgia</h2>
+                <h2>Collage Series</h2>
+                <img src="images/assets/point.svg" alt="" class="pinfo">
             </div>
-            <img src="images/assets/arrow-2.svg" alt="" class="pinfo">
         </section>
 
         <section id="p" class="fofa">
-            <h2>Project</h2>
-            <img src="images/assets/arrow-2.svg" alt="" class="pinfo">
+            <div id="gbox">
+                <h1>FOFA Undergraduate Student Exhibition</h1>
+                <h2>Photography Project &amp; Catalogue Design </h2>
+                <img src="images/assets/point.svg" alt="" class="pinfo">
+            </div>
         </section>
 
         <section id="p" class="karel">
-            <h2>Project</h2>
-            <img src="images/assets/arrow-2.svg" alt="" class="pinfo">
+            <div id="gbox">
+                <h1>Tribute to Karel Martens</h1>
+                <h2>Poster Series</h2>
+                <img src="images/assets/point.svg" alt="" class="pinfo">
+            </div>
         </section>
 
         <section id="p" class="dida">
-            <h2>Project</h2>
-            <img src="images/assets/arrow-2.svg" alt="" class="pinfo">
+            <div id="gbox">
+                <h1>Failures: A Didascalogue</h1>
+                <h2>Book Design </h2>
+                <img src="images/assets/point.svg" alt="" class="pinfo">
+            </div>
         </section>
 
         <section id="p" class="illu">
-            <h2>Project</h2>
-            <img src="images/assets/arrow-2.svg" alt="" class="pinfo">
+            <div id="gbox">
+                <h1>Illustration</h1>
+                <h2>Various Series</h2>
+                <img src="images/assets/point.svg" alt="" class="pinfo">
+            </div>
         </section>
     </div>
 
 
-    <section class="inf A">
+    <section class="inf A container">
         <div id="A1">
             <div class="tba">
                 <img src="images/assets/arrow-2.svg" alt="" class="return">
@@ -93,7 +113,7 @@
         </div>
     </section>
 
-    <section class="inf B">
+    <section class="inf B container">
         <div id="B1">
             <div class="tba">
                 <img src="images/assets/arrow-2.svg" alt="" class="return">
@@ -104,7 +124,7 @@
         </div>
     </section>
 
-    <section class="inf C">
+    <section class="inf C container">
         <div id="C1">
             <div class="tba">
                 <img src="images/assets/arrow-2.svg" alt="" class="return">
@@ -121,4 +141,6 @@
     <script src="js/jquery.visible.min.js"></script>
 </body>
 
-<script src="js/dev_scripts.js"></script></html>
+<script src="js/dev_scripts.js"></script>
+
+</html>

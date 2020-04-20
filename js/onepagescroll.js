@@ -113,12 +113,6 @@ function onepagescroll(selector, options) {
         } else if (e.wheelDelta < -30 && togg == true) {
             changePage(pages.length, 1, 1);
         }
-
-        /*if (currentPage % 2 === 0) {
-            $(".ops-navigation").removeClass("invert")
-        } else {
-            $(".ops-navigation").addClass("invert");
-        }*/
     }
 
 
@@ -185,6 +179,51 @@ function onepagescroll(selector, options) {
                 transform: 'translate3d(' + -(currentPage - 1) * 100 + '%,0,0)'
             });
         }
+
+
+        //update to dbox content
+
+        if (currentPage == 1) {
+            $("#dbox").fadeOut(250, function () {
+                $("#date").text("Winter 2019");
+                $("#medium").text("Photography, Book Design, Research Creation");
+            }).fadeIn(250);
+        }
+
+        if (currentPage == 2) {
+            $("#dbox").fadeOut(250, function () {
+                $("#date").text("Fall 2018");
+                $("#medium").text("Photography, Digital Collage, Bookmaking");
+            }).fadeIn(250);
+        }
+        
+        if (currentPage == 3) {
+            $("#dbox").fadeOut(250, function () {
+                $("#date").text("Fall 2019");
+                $("#medium").text("Creative Direction, Photography, Digital Collage");
+            }).fadeIn(250);
+        }
+        
+         if (currentPage == 4) {
+            $("#dbox").fadeOut(250, function () {
+                $("#date").text("Fall 2017");
+                $("#medium").text("Typography, Advertising");
+            }).fadeIn(250);
+        }
+        
+        if (currentPage == 5) {
+            $("#dbox").fadeOut(250, function () {
+                $("#date").text("Winter 2018");
+                $("#medium").text("Creative Direction, Photography, Layout Design");
+            }).fadeIn(250);
+        }
+        
+        if (currentPage == 6) {
+            $("#dbox").fadeOut(250, function () {
+                $("#date").text("Ongoing!");
+                $("#medium").text("Analogue & Digital Illustration, Concept Generation");
+            }).fadeIn(250);
+        }
     };
 
     /* swipe */
@@ -194,7 +233,7 @@ function onepagescroll(selector, options) {
 
     //bind touch
     document.addEventListener('touchstart', function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
             var touch = e.touches[0] || e.changedTouches[0];
             if (setting.direction == 'vertical')
@@ -205,7 +244,7 @@ function onepagescroll(selector, options) {
     });
 
     document.addEventListener('touchend', function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
             var touch = e.touches[0] || e.changedTouches[0];
             if (setting.direction == 'vertical')

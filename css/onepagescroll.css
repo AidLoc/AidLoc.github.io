@@ -38,6 +38,7 @@ body,html{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    margin-right: 1.5vw;
 }
 
 .ops-navigation li {
