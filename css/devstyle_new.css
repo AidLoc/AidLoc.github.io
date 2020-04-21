@@ -38,6 +38,26 @@ body {
     font-kerning: normal;
 }
 
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: lightgrey;
+  text-decoration: underline;
+}
+
+a:active {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 #nav {
     padding: 2vw;
     width: 100%;
@@ -237,6 +257,7 @@ body {
 
 .illu {
     background-image: url(../images/illu/brain-01.png);
+    background-position: bottom right !important;
 }
 
 #gbox {
@@ -332,9 +353,12 @@ body {
 
 
 .return {
-    width: 10%;
-    position: sticky;
-    top: 0;
+    width: 5vw;
+    position: fixed;
+    right: 1.5vw;
+    bottom: 1.5vw;
+    transform: rotate(180deg);
+    z-index: 9999;
 }
 
 .return:hover {
@@ -364,7 +388,12 @@ body {
     overflow-y: scroll !important;
 }
 
-#A1, #B1, #C1, #D1, #E1, #F1 {
+#A1,
+#B1,
+#C1,
+#D1,
+#E1,
+#F1 {
     height: 100vh;
     width: 100vw;
 }
@@ -380,11 +409,20 @@ body {
 }
 
 .tbb {
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tbc {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
     height: 100vh;
     width: 100vw;
 }
@@ -395,19 +433,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 .right {
+    position: relative;
     width: 50%;
     height: 100%;
     background-color: white;
-    border: 1px solid red;
 }
+
+/* regular ibox */
 
 #ibox {
     width: 45vw;
-    max-height: 50vh;
+    height: auto;
     z-index: 4;
     color: white;
     text-align: left;
@@ -435,47 +475,119 @@ body {
 
 .ln {
     width: 75%;
-    height: .1vh;
+    height: 2px;
     background: white;
     margin-bottom: 4vh;
 }
 
-.right img{
+/*inverted ibox */
+
+.tbc #ibox {
+    color: black;
+}
+
+.tbc .ln {
+    background: black;
+}
+
+.tbc .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.tbc .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.tbc .fimg{
+    width: 25vw;
+}
+
+.fimg {
     position: absolute;
     width: 30vw;
     height: auto;
     cursor: pointer;
+    animation-play-state: running;
+    animation: float 8s ease-in-out infinite;
 }
 
-.ri1 {
-    left: 60vw;
-    top: 20vh;
+.fimg:nth-child(1) {
+    left: 10vw;
+    top: 10vh;
     z-index: 10;
 }
 
-.ri2 {
-    display: none;
-}
-
-.ri3 {
-    display: none;
-}
-
-
-/*.right img:nth-child(1){
-    left: 60vw;
+.fimg:nth-child(2) {
+    left: 20vw;
     top: 20vh;
-    z-index: 10;
-}
-
-.right img:nth-child(2){
-    left: 65vw;
-    top: 30vh;
     z-index: 11;
+    animation-delay: .4s;
 }
 
-.right img:nth-child(3){
-    left: 70vw;
+.fimg:nth-child(3) {
+    left: 5vw;
+    top: 30vh;
+    z-index: 12;
+    animation-delay: .6s;
+}
+
+.fimg:nth-child(4) {
+    left: 15vw;
     top: 40vh;
     z-index: 12;
+    animation-delay: .6s;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-10px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+.tbb div{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.smt1 {
+    background-image: url(../images/smt/sleep.jpg);
+}
+
+.smt2 {
+    background-image: url(../images/smt/arctic.jpg);
+}
+
+.lofi1 {
+    background-image: url(../images/lofi/1.jpg);
+}
+
+.lofi2 {
+   width: 100%;
+   height: 100%; 
+}
+
+.tbd {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
 }
