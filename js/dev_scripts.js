@@ -55,7 +55,7 @@ $(".info").click(function () {
     } else if (currentPage == 6) {
         proj = (".F");
     }
-    
+
     $("#dbox").hide('slide', {
         direction: "left"
     }, 1000);
@@ -165,8 +165,18 @@ $(".fimg").mouseup(function () {
     $(this).css("animation-play-state", "running");
 });
 
-var coll = $(.gall img);
+var coll = $(".gall img");
+var item;
 
+var zrand = function () {
+    if ($(".F").is(":visible")) {
+        item = coll[Math.floor(Math.random() * coll.length)];
+        z++;
+        $(item).css("z-index", z);
+    }
+}
+
+setInterval(zrand, 1000);
 
 
 
