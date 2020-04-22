@@ -39,23 +39,23 @@ body {
 }
 
 a:link {
-  color: white;
-  text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
 
 a:hover {
-  color: lightgrey;
-  text-decoration: underline;
+    color: lightgrey;
+    text-decoration: underline;
 }
 
 a:active {
-  color: lightgrey;
-  text-decoration: none;
+    color: lightgrey;
+    text-decoration: none;
 }
 
 a:visited {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 #nav {
@@ -182,26 +182,20 @@ a:visited {
 }
 
 .drg {
-    left: 0;
+    left: 2px;
     position: absolute;
     height: 100%;
     width: 7vw;
-    display: flex;
-    flex-flow: column wrap;
-    overflow: visible;
-    justify-content: center;
-    align-items: center;
     z-index: 7;
 }
 
 #point {
+    position: absolute;
     left: 0;
+    top: 0;
     width: auto;
     height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
     transform: rotate(-90deg);
-    top: 0 !important;
     cursor: pointer;
 }
 
@@ -209,7 +203,7 @@ a:visited {
     position: absolute;
     bottom: -2vh;
     left: 0;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     font-family: b4;
 
 }
@@ -359,12 +353,12 @@ a:visited {
     bottom: 1.5vw;
     transform: rotate(180deg);
     z-index: 9999;
+    cursor: pointer;
 }
 
 .return:hover {
     transition: all 1s ease-in-out;
     opacity: 0.75;
-    cursor: pointer;
 }
 
 .invert {
@@ -434,6 +428,7 @@ a:visited {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    overflow: hidden;
 }
 
 .right {
@@ -441,6 +436,7 @@ a:visited {
     width: 50%;
     height: 100%;
     background-color: white;
+    overflow: hidden;
 }
 
 /* regular ibox */
@@ -497,13 +493,13 @@ a:visited {
     flex-flow: column wrap;
 }
 
-.tbc .left{
+.tbc .left {
     position: relative;
     width: 50%;
     height: 100%;
 }
 
-.tbc .fimg{
+.tbc .fimg {
     width: 25vw;
 }
 
@@ -513,7 +509,12 @@ a:visited {
     height: auto;
     cursor: pointer;
     animation-play-state: running;
-    animation: float 8s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+}
+
+.grow {
+    transition: all .4s ease;
+    width: 36vw !important;
 }
 
 .fimg:nth-child(1) {
@@ -526,21 +527,78 @@ a:visited {
     left: 20vw;
     top: 20vh;
     z-index: 11;
-    animation-delay: .4s;
+    animation-delay: 1s;
 }
 
 .fimg:nth-child(3) {
     left: 5vw;
     top: 30vh;
     z-index: 12;
-    animation-delay: .6s;
+    animation-delay: 2s;
 }
 
 .fimg:nth-child(4) {
     left: 15vw;
-    top: 40vh;
+    top: 50vh;
+    z-index: 13;
+    animation-delay: 1.5s;
+}
+
+.fimg:nth-child(5) {
+    left: 25vw;
+    top: 60vh;
+    z-index: 14;
+    animation-delay: 0.5s;
+}
+
+.fimg:nth-child(6) {
+    left: 12vw;
+    top: 70vh;
+    z-index: 15;
+    animation-delay: 3s;
+}
+
+/* custom fimg placement for full width gallery */
+
+.tbd .fimg:nth-child(1) {
+    left: 10vw;
+    top: 10vh;
+    z-index: 10;
+}
+
+.tbd .fimg:nth-child(2) {
+    left: 20vw;
+    top: 20vh;
+    z-index: 11;
+    animation-delay: 1s;
+}
+
+.tbd .fimg:nth-child(3) {
+    left: 30vw;
+    top: 30vh;
     z-index: 12;
-    animation-delay: .6s;
+    animation-delay: 2s;
+}
+
+.tbd .fimg:nth-child(4) {
+    left: 40vw;
+    top: 20vh;
+    z-index: 13;
+    animation-delay: 1.5s;
+}
+
+.tbd .fimg:nth-child(5) {
+    left: 60vw;
+    top: 40vh;
+    z-index: 14;
+    animation-delay: 0.5s;
+}
+
+.tbd .fimg:nth-child(6) {
+    left: 70vw;
+    top: 10vh;
+    z-index: 15;
+    animation-delay: 3s;
 }
 
 @keyframes float {
@@ -560,7 +618,7 @@ a:visited {
     }
 }
 
-.tbb div{
+.tbb div {
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -581,8 +639,20 @@ a:visited {
 }
 
 .lofi2 {
-   width: 100%;
-   height: 100%; 
+    width: 100%;
+    height: 100%;
+}
+
+.fofa1 {
+    background-image: url(../images/fofa/dwind-2.jpg);
+}
+
+.fofa2 {
+    background-image: url(../images/fofa/DSC_0090.JPG);
+}
+
+.karel1 {
+    background-image: url(../images/karel/m2.jpg);
 }
 
 .tbd {
@@ -590,4 +660,49 @@ a:visited {
     width: 100vw;
     height: 100vh;
     background-color: white;
+    overflow: hidden;
+}
+
+#D1 .tba .right {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/karel/m1.jpg);
+}
+
+#E1 .tba .right {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/dida/DSC_0827.JPG);
+}
+
+#E1 .tbc .left {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/dida/DSC_0832.JPG);
+}
+
+.dida1 {
+    width: 100%;
+    height: 100%;
+}
+
+.dida2 {
+    background-image: url(../images/dida/diwind.JPG);
+}
+
+.illu1 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../images/illu/LL10.jpg);
+    margin: auto auto;
+}
+
+.F .tba .right {
+	background-color: #FCB41A;
 }

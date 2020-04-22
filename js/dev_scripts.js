@@ -55,13 +55,12 @@ $(".info").click(function () {
     } else if (currentPage == 6) {
         proj = (".F");
     }
-
-
+    
     $("#dbox").hide('slide', {
         direction: "left"
     }, 1000);
     $("#nav").slideUp(1000);
-    $(".pages").slideUp(1000)
+    $(".pages").fadeOut(1000);
     $(proj).fadeIn(1000);
     console.log(togg);
 });
@@ -72,7 +71,7 @@ $(".return").click(function () {
         direction: "left"
     }, 1000);
     $("#nav").slideDown(1000);
-    $(".pages").slideDown(1000);
+    $(".pages").fadeIn(1000);
     $(proj).fadeOut(1000);
     console.log(togg);
 });
@@ -143,17 +142,23 @@ $(".lofi2 .fimg").draggable({
     containment: "parent"
 });
 
+$(".dida1 .fimg").draggable({
+    containment: "parent"
+});
+
 
 var z = 100;
 
 $(".fimg").mousedown(function () {
     z++;
-    $(this).css( "z-index", z);
-    $(this).css( "animation-play-state", "paused");
+    $(this).css("z-index", z);
+    $(this).css("animation-play-state", "paused");
+    //$(this).addClass("grow");
 });
 
 $(".fimg").mouseup(function () {
-    $(this).css( "animation-play-state", "running");
+    //$(this).removeClass("grow");
+    $(this).css("animation-play-state", "running");
 });
 
 
