@@ -178,6 +178,16 @@ var zrand = function () {
 
 setInterval(zrand, 1000);
 
+//preload code
+
+function load() {
+    page = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    $(".preload").fadeOut(2000);
+}
+
 
 
 //$('a[href$="ABC"]')
