@@ -146,6 +146,10 @@ $(".dida1 .fimg").draggable({
     containment: "parent"
 });
 
+$(".gall .fimg").draggable({
+    containment: "parent"
+});
+
 
 var z = 100;
 
@@ -160,6 +164,10 @@ $(".fimg").mouseup(function () {
     //$(this).removeClass("grow");
     $(this).css("animation-play-state", "running");
 });
+
+var coll = $(.gall img);
+
+
 
 
 //$('a[href$="ABC"]')
