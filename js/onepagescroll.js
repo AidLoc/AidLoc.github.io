@@ -44,9 +44,9 @@ function onepagescroll(selector, options) {
         //allow keyboard input
         if (setting.keyboard) {
             addEventListener('keydown', function (e) {
-                if (keyUp[e.keyCode])
+                if (keyUp[e.keyCode] && togg == true)
                     changePage(1, pages.length, -1);
-                else if (keyDown[e.keyCode])
+                else if (keyDown[e.keyCode] && togg == true)
                     changePage(pages.length, 1, 1);
             });
         }
@@ -252,9 +252,9 @@ function onepagescroll(selector, options) {
             else if (setting.direction == 'horizontal')
                 lpos = touch.pageX;
         }
-        if (fpos + _n < lpos)
+        if (fpos + _n < lpos && togg == true)
             changePage(1, pages.length, -1);
-        else if (fpos > lpos + _n)
+        else if (fpos > lpos + _n && togg == true)
             changePage(pages.length, 1, 1);
     });
 
