@@ -1008,7 +1008,7 @@ a:visited {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 9999;
+    z-index: 9998;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1026,18 +1026,6 @@ a:visited {
 
 }
 
-#lgo {
-    width: 30vw;
-    height: auto;
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-    -webkit-animation: shiftB 3s ease-in-out infinite;
-            animation: shiftB 3s ease-in-out infinite;
-}
-
 .preload p {
     margin-top: 2vh;
     font-family: b2;
@@ -1046,65 +1034,15 @@ a:visited {
     color: white;
 }
 
-@-webkit-keyframes shiftB {
-    0% {
-        -webkit-filter: hue-rotate(0deg);
-                filter: hue-rotate(0deg);
-    }
-
-    25% {
-        -webkit-filter: hue-rotate(90deg);
-                filter: hue-rotate(90deg);
-    }
-
-    50% {
-        -webkit-filter: hue-rotate(180deg);
-                filter: hue-rotate(180deg);
-    }
-
-    75% {
-        -webkit-filter: hue-rotate(270deg);
-                filter: hue-rotate(270deg);
-    }
-
-    100% {
-        -webkit-filter: hue-rotate(360deg);
-                filter: hue-rotate(360deg);
-    }
-}
-
-@keyframes shiftB {
-    0% {
-        -webkit-filter: hue-rotate(0deg);
-                filter: hue-rotate(0deg);
-    }
-
-    25% {
-        -webkit-filter: hue-rotate(90deg);
-                filter: hue-rotate(90deg);
-    }
-
-    50% {
-        -webkit-filter: hue-rotate(180deg);
-                filter: hue-rotate(180deg);
-    }
-
-    75% {
-        -webkit-filter: hue-rotate(270deg);
-                filter: hue-rotate(270deg);
-    }
-
-    100% {
-        -webkit-filter: hue-rotate(360deg);
-                filter: hue-rotate(360deg);
-    }
-}
-
 .mobile {
     display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media  (orientation: portrait) {
+    .preload {
+        display: none !important;
+    }
+    
     .mobile {
         display: contents;
         width: 100vw;
