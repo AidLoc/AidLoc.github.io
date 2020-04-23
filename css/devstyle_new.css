@@ -79,7 +79,7 @@ a:visited {
 #title {
     color: white;
     font-family: b2;
-    font-size: 2vw;
+    font-size: 2vmax;
     margin-left: 6vw;
     text-align: center;
 }
@@ -106,9 +106,8 @@ a:visited {
     color: white;
     background-image: url(../images/lofi/lowind.jpg);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% auto;
-    overflow: scroll !important;
+    background-position: center;
+    background-size: cover;
 }
 
 #cover {
@@ -131,19 +130,19 @@ a:visited {
 }
 
 #hbox h2 {
-    font-size: 2vw;
+    font-size: 2vmax;
     white-space: nowrap;
     font-family: b3;
 }
 
 #hbox h1 {
-    font-size: 8vw;
+    font-size: 8vmax;
     white-space: nowrap;
     font-family: b1;
 }
 
 #hbox p {
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     font-family: b4;
 }
 
@@ -174,11 +173,12 @@ a:visited {
     width: 35vw;
     height: 10vh;
     z-index: 4;
+    overflow: visible !important;
 }
 
 #s {
-    width: 1vw;
-    height: 1vw;
+    width: .5vw;
+    height: .5vw;
     background-color: white;
     border-radius: 35%;
 }
@@ -196,16 +196,16 @@ a:visited {
     left: 0;
     top: 0;
     width: auto;
-    height: 100%;
+    height: 12vmin;
     transform: rotate(-90deg);
     cursor: pointer;
 }
 
 .drg p {
     position: absolute;
-    bottom: -2vh;
-    left: 0;
-    font-size: 1.25vw;
+    bottom: -2vmax;
+    left: -1vmax;
+    font-size: 1.25vmax;
     font-family: b4;
 
 }
@@ -225,7 +225,7 @@ a:visited {
     text-align: center;
     color: white;
     font-family: b1;
-    font-size: 12vw;
+    font-size: 12vmax;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -256,13 +256,36 @@ a:visited {
     background-position: bottom right !important;
 }
 
+.contact {
+    background-image: url(../images/smt/arctic.jpg);
+}
+
+.contimg {
+	width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.85);
+    z-index: 3;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contimg img {
+    margin: 2vw;
+    width: 8vw;
+    height: auto;
+    animation: float 6s ease-in-out infinite;
+    cursor: pointer;
+}
+
 #gbox {
     position: absolute;
     margin: auto auto;
     left: 18vh;
     top: 25vh;
     width: 50vw;
-    max-height: 50vh;
+    height: auto;
     z-index: 4;
     color: white;
     text-align: left;
@@ -275,19 +298,19 @@ a:visited {
 }
 
 #gbox h1 {
-    font-size: 4vw;
+    font-size: 3vmax;
     font-family: b2;
 }
 
 #gbox h2 {
-    font-size: 2.25vw;
+    font-size: 2vmax;
     white-space: nowrap;
     font-family: b4;
 }
 
 #gbox p {
     margin-top: 1vw;
-    font-size: 2vw;
+    font-size: 2vmax;
     font-family: b4;
     text-decoration: underline;
     transition: all .2s ease;
@@ -327,7 +350,7 @@ a:visited {
 }
 
 #dbox h2 {
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     white-space: nowrap;
     font-family: b3;
     padding: 2%;
@@ -453,19 +476,19 @@ a:visited {
 }
 
 #ibox h1 {
-    font-size: 4vw;
+    font-size: 4vmax;
     font-family: b2;
     margin-bottom: 1vh;
 }
 
 #ibox h2 {
-    font-size: 2vw;
+    font-size: 2vmax;
     white-space: nowrap;
     font-family: b4;
 }
 
 #ibox p {
-    font-size: 1.25vw;
+    font-size: 1.25vmax;
     font-family: b4;
     line-height: 1.4;
 }
@@ -500,13 +523,9 @@ a:visited {
     height: 100%;
 }
 
-.tbc .fimg {
-    width: 25vw;
-}
-
 .fimg {
     position: absolute;
-    width: 30vw;
+    width: 25vmax;
     height: auto;
     cursor: pointer;
     animation-play-state: running;
@@ -713,6 +732,7 @@ a:visited {
     width: 100%;
     height: 200vh;
     background-color: white;
+    overflow: hidden;
 }
 
 .gall .fimg:nth-child(1) {
@@ -815,7 +835,7 @@ a:visited {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20,20,20);
+    background-color: rgb(20, 20, 20);
 
 }
 
@@ -827,10 +847,10 @@ a:visited {
     animation: shiftB 3s ease-in-out infinite;
 }
 
-.preload p{
+.preload p {
     margin-top: 2vh;
     font-family: b2;
-    font-size: 3vw;
+    font-size: 3vmax;
     text-align: center;
     color: white;
 }
@@ -855,4 +875,44 @@ a:visited {
     100% {
         filter: hue-rotate(360deg);
     }
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+        display: contents;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(20, 20, 20);
+        z-index: 400;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: left;
+    }
+
+    .mobbox {
+        width: 80%;
+    }
+
+    .mobile h1 {
+        font-size: 8vw;
+        font-family: b1;
+    }
+
+    .mobile p {
+        font-size: 4vw;
+        font-family: b4;
+    }
+
+    .mobile img {
+        margin-top: 6vh;
+        width: 20vw;
+    }
+
 }

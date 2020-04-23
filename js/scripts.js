@@ -24,7 +24,7 @@ $(".close").click(function () {
 });
 
 $("#dev-btn").click(function () {
-    window.location.href = 'development.html';
+    window.location.href = 'final/index.html';
 });
 
 $("#mood-btn").click(function () {

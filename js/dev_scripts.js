@@ -24,8 +24,6 @@ $(function setup() {
     togg = false;
     var A = $("#point").position().left;
     var B = $(".last").position().left;
-
-
 });
 
 /*$("#point").click(function () {
@@ -65,6 +63,27 @@ $(".info").click(function () {
     console.log(togg);
 });
 
+$(document).ready(function () {
+    if (currentPage == 7) {
+
+    }
+});
+
+var contact = function () {
+    if (home == false) {
+        if (currentPage == pages.length) {
+            $("#dbox").fadeOut(1000);
+            $("#nav").slideUp(1000);
+        } else {
+            $("#dbox").fadeIn(1000);
+            $("#nav").slideDown(1000);
+        }
+    }
+}
+
+setInterval(contact, 500);
+
+
 $(".return").click(function () {
     togg = true;
     $("#dbox").show('slide', {
@@ -79,13 +98,17 @@ $(".return").click(function () {
 
 //navigation via pagination
 function navi(hr) {
-    console.log(hr);
     var incr = (hr - currentPage);
+    var mult = Math.abs(incr);
+    setting.animationTime = setting.animationTime + (200*mult);
+    console.log(mult);
+    console.log(setting.animationTime);
     if (hr > currentPage) {
         changePage(pages.length, 1, incr);
     } else if (hr < currentPage) {
         changePage(1, pages.length, incr);
     }
+    setting.animationTime = 500;
 }
 
 

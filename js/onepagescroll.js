@@ -29,7 +29,7 @@ function onepagescroll(selector, options) {
         direction: 'vertical',
     };
 
-    var setting = extend({}, def, options);
+    window.setting = extend({}, def, options);
 
     /* initialization */
 

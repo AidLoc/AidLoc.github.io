@@ -11,15 +11,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/touchpunch.js"></script>
+    <script type="text/javascript" src="js/processing.js"></script>
 </head>
 
 <body onload="load()">
-    
+
     <div class="preload">
-        <img src="images/assets/logoLG.png" alt="" id="lgo">
+       <canvas id="canvas" data-processing-sources="param.pde"></canvas>
         <p>Please Hold</p>
-        <div class="ghost">
-            
+    </div>
+
+    <div class="mobile">
+        <div class="mobbox">
+            <h1>Woah there!</h1>
+            <p> Looks like you're on a phone. Please turn your phone sideways, or wait to look at my awesome work on a bigger device.</p>
+            <img src="images/assets/phone.png" alt="">
         </div>
     </div>
 
@@ -41,7 +47,7 @@
         <div id="hbox">
             <h2>WELCOME TO</h2>
             <h1>LOCKE DESIGN</h1>
-            <p>Hi there! My name is Aiden Locke, I’m a freelance designer specializing in print design, advertising, photography &amp; web design. Come check out some of my work: </p>
+            <p>Hi there! My name is Aiden Locke, I’m a freelance designer specializing in print design, advertising, photography &amp; web design. Come check out some of my work</p>
         </div>
         <div id="sliderbox">
             <div class="drg">
@@ -104,6 +110,14 @@
                 <h1>Illustration</h1>
                 <h2>Various Series</h2>
                 <p class="info">see more</p>
+            </div>
+        </section>
+        
+        <section id="p" class="contact">
+            <div class="contimg">
+                <a href="https://www.instagram.com/lockedsgn/" target="_blank"><img src="images/assets/instagram.png" alt=""></a>
+                <a href="mailto: aidenslocke@gmail.com" target="_blank"><img src="images/assets/mail.png" alt=""></a>
+                <a href="www.linkedin.com/in/lockedsgn" target="_blank"><img src="images/assets/linkedin.png" alt=""></a>
             </div>
         </section>
     </div>
