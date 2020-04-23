@@ -27,7 +27,7 @@ body,html{
 }
 
 .ops-navigation {
-    width: 10vw;
+    width: auto;
 	padding: 0;
 	z-index: 11;
 	list-style: none;
