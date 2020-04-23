@@ -10,7 +10,7 @@ float b = 264.98825;
 
 
 void setup() {
-  size(800, 600);
+  size(600, 400);
   background(20, 20, 20);
   frameRate(60);
 }
@@ -36,9 +36,9 @@ void draw(){
 }
 
 float x(float t) {
-  return cos(t / a) * 300;
+  return cos(t / a) * 200;
 }
 
 float y(float t) {
-   return cos(t / b) * 200;
+   return cos(t / b) * 100;
 }
