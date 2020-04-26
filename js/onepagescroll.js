@@ -38,7 +38,8 @@ function onepagescroll(selector, options) {
         window.addEventListener('wheel', onScrollEventHandler);
 
         css(document.querySelector(selector), {
-            transition: 'transform ' + setting.animationTime + 'ms ' + setting.animationType
+            transition: 'transform ' + setting.animationTime + 'ms ' + setting.animationType,
+            will-change: 'transform'
         });
 
         //allow keyboard input
