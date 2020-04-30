@@ -38,8 +38,7 @@ function onepagescroll(selector, options) {
         window.addEventListener('wheel', onScrollEventHandler);
 
         css(document.querySelector(selector), {
-            transition: 'transform ' + setting.animationTime + 'ms ' + setting.animationType,
-            will-change: 'transform'
+            transition: 'transform ' + setting.animationTime + 'ms ' + setting.animationType
         });
 
         //allow keyboard input
@@ -106,8 +105,8 @@ function onepagescroll(selector, options) {
 
     /* wheel event handler */
     window.onScrollEventHandler = function (e) {
-
-
+        if (scrolled == false){helper();}
+        
         if (e.wheelDelta > 30 && togg == true) {
             changePage(1, pages.length, -1);
 

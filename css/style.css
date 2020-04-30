@@ -110,6 +110,13 @@ a:visited {
     z-index: 999;
 }
 
+#helper {
+    width: 25vw !important;
+    height: auto;
+    position: absolute;
+    z-index: 250;
+}
+
 #home {
     height: 120vh;
     position: relative;

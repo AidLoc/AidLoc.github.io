@@ -1,6 +1,7 @@
 window.togg;
-
+window.scrolled = false;
 var home = true;
+
 
 $(function setup() {
     onepagescroll('div.pages', {
@@ -19,22 +20,13 @@ $(function setup() {
     $(".D").hide();
     $(".E").hide();
     $(".F").hide();
+    $("#helper").hide();
     $("#nav").hide();
     $("#dbox").hide();
     togg = false;
     var A = $("#point").position().left;
     var B = $(".last").position().left;
 });
-
-/*$("#point").click(function () {
-    $('body').jGravity({ 
-        target: 'img#logo', 
-        ignoreClass: 'ignoreMe', 
-        weight: 75, 
-        depth: 5, 
-        drag: true 
-    });
-});*/
 
 $(".info").click(function () {
     togg = false;
@@ -61,12 +53,6 @@ $(".info").click(function () {
     $(".pages").fadeOut(1000);
     $(proj).fadeIn(1000);
     console.log(togg);
-});
-
-$(document).ready(function () {
-    if (currentPage == 7) {
-
-    }
 });
 
 var contact = function () {
@@ -100,7 +86,7 @@ $(".return").click(function () {
 function navi(hr) {
     var incr = (hr - currentPage);
     var mult = Math.abs(incr);
-    setting.animationTime = setting.animationTime + (200*mult);
+    setting.animationTime = setting.animationTime + (200 * mult);
     console.log(mult);
     console.log(setting.animationTime);
     if (hr > currentPage) {
@@ -142,13 +128,31 @@ if (home == true) {
             $("#hbox").animate({
                 'up': W
             }, 1250);
-            /*$('html,body').animate({
-                    scrollTop: $(".pages").offset().top
-                },
-                1750);*/
+
+            $('#helper').fadeIn(1500);
+            $('body').css("cursor", "none");
+
             home = false;
         }
     });
+}
+
+//custom tooltips
+
+$(document).on('mousemove', function (e) {
+    if (scrolled == false) {
+        $("#helper").css({
+            left: e.pageX,
+            top: e.pageY
+        });
+    }
+});
+
+window.helper = function () {
+    $('body').css("cursor", "default");
+    $('#helper').fadeOut(1000);
+    scrolled = true;
+    return;
 }
 
 //draggable galleries
@@ -191,6 +195,7 @@ $(".fimg").mouseup(function () {
 var coll = $(".gall img");
 var item;
 
+//randomly brings illustration to front
 var zrand = function () {
     if ($(".F").is(":visible")) {
         item = coll[Math.floor(Math.random() * coll.length)];
