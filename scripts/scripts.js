@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var colors = ["#587291", "#89D2DC", "#e9c46a", "#f4a261", "#e76f51"];
+    var colors = ["#FFB938", "#DF7153", "#626793", "#81B19A", "#015979", "rgb(20,20,20)"];
     var rand = colors[Math.floor(Math.random() * colors.length)];
     $("body").get(0).style.setProperty("--color", rand);
     var date = new Date().getFullYear();

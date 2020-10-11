@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
     font-size: 1em;
@@ -23,7 +22,6 @@ body {
     cursor: default;
     height: auto;
     overflow-x: hidden;
-    -webkit-backface-visibility: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -95,13 +93,11 @@ body {
 }
 
 #shop {
-    -ms-flex-item-align: end;
     align-self: end;
 }
 
 #port {
     grid-column: 3 / 3;
-    -ms-flex-item-align: end;
     align-self: end;
     justify-self: end;
 }
@@ -109,20 +105,17 @@ body {
 #nav div span {
     font-size: min(max(1rem, 4vw), 25px);
     pointer-events: auto;
-    -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 .hov span:hover {
     opacity: 50%;
     cursor: pointer;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
 .hov span:not( :hover) {
     opacity: 100%;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -133,18 +126,9 @@ body {
 #home {
     width: auto;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
 }
 
@@ -165,15 +149,12 @@ body {
 #enter:hover {
     opacity: 50%;
     cursor: pointer;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
-    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
 #enter:not( :hover) {
     opacity: 100%;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -196,10 +177,7 @@ body {
 }
 
 #work ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 0;
 }
@@ -207,26 +185,17 @@ body {
 #work ul li {
 
     height: 25vw;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     overflow: hidden;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     border: 1vw solid var(--color);
     z-index: 100;
 }
 
 li img {
-    -o-object-fit: cover;
     object-fit: cover;
     max-height: 125%;
 
@@ -248,7 +217,6 @@ li img:hover {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     pointer-events: none;
     opacity: 0%;
@@ -256,13 +224,11 @@ li img:hover {
 
 #work ul li:hover > .title {
     opacity: 100%;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
 #work ul li:not( :hover) > .title {
     opacity: 0%;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -273,8 +239,6 @@ li img:hover {
     height: auto;
     margin-top: 12vh;
     z-index: 400;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -300,7 +264,6 @@ li img:hover {
     height: auto;
     padding: 4vw;
     padding-top: 0vw;
-    -ms-flex-item-align: start;
     align-self: flex-start;
 }
 
@@ -309,18 +272,9 @@ li img:hover {
     height: 10vh;
     margin-top: 2vh;
     margin-left: 4vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     z-index: 400;
 }
@@ -333,13 +287,11 @@ li img:hover {
 #soc:hover {
     opacity: 50%;
     cursor: pointer;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
 #soc:not( :hover) {
     opacity: 100%;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -348,14 +300,8 @@ li img:hover {
 #footer {
     width: 100vw;
     min-height: 15vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     color: white;
     font-family: b4;
@@ -370,21 +316,14 @@ li img:hover {
     height: 120vh;
     overflow: hidden;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
 }
 
 #hero img {
     /*top: -25%;
     left: -25%;*/
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
@@ -392,7 +331,6 @@ li img:hover {
 }
 
 #proj {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(20, 20, 20, 1)), color-stop(50%, rgba(20, 20, 20, .75)), to(rgba(20, 20, 20, 0)));
     background: linear-gradient(to top, rgba(20, 20, 20, 1) 10%, rgba(20, 20, 20, .75) 50%, rgba(20, 20, 20, 0) 100%);
     color: white;
     width: 100%;
@@ -406,7 +344,6 @@ li img:hover {
 }
 
 #proj span {
-    -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
@@ -435,21 +372,14 @@ li img:hover {
     color: white;
     font-size: min(max(1rem, 4vw), 19px);
     font-family: b4;
-    -webkit-column-gap: 2vw;
     column-gap: 2vw;
     text-align: justify;
 }
 
 .short {
     width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -460,7 +390,6 @@ li img:hover {
 #images {
     padding: 2vw;
     line-height: 4vw;
-    -webkit-column-gap: 2vw;
     column-gap: 2vw;
     display: inline-block;
 }
@@ -471,30 +400,21 @@ li img:hover {
 }
 
 .col4 {
-    -webkit-column-count: 4;
     column-count: 4;
 }
 
 .col3 {
-    -webkit-column-count: 3;
     column-count: 3;
 }
 
 .col2 {
-    -webkit-column-count: 2;
     column-count: 2;
 }
 
 .col1 {
     width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -510,15 +430,14 @@ li img:hover {
 /* ----- Queries ----- */
 
 
-@media (max-width: 769px),
-(orientation: portrait) {
+@media (max-width: 769px), (orientation: portrait) {
 
     /*NAV*/
 
     #nav div span {
         font-size: min(max(1rem, 4vw), 14px);
     }
-
+    
     #port {
         text-align: right;
     }
@@ -554,8 +473,6 @@ li img:hover {
     #work ul li {
         width: 100vw;
         height: 50vh;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         border: 3vw solid var(--color);
     }
@@ -567,13 +484,11 @@ li img:hover {
     .title {
         opacity: 100%;
         font-size: min(max(1rem, 6vw), 33px);
-        -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
         filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     }
 
     #work ul li:not( :hover) > .title {
         opacity: 100%;
-        -webkit-transition: all .5s ease;
         transition: all .5s ease;
     }
 
@@ -588,18 +503,14 @@ li img:hover {
         max-width: unset !important;
         min-height: unset !important;
         min-width: unset !important;
-        -o-object-fit: cover;
         object-fit: cover;
         height: 100%;
-        -o-object-position: left;
         object-position: left;
     }
 
     #content p {
         margin: 0;
-        -webkit-column-gap: 0vw;
         column-gap: 0vw;
-        -webkit-column-count: 1;
         column-count: 1;
         width: 100vw;
         padding: 6vw;
@@ -612,7 +523,6 @@ li img:hover {
     .col3,
     .col3,
     .col1 {
-        -webkit-column-count: 1;
         column-count: 1;
     }
 
@@ -628,9 +538,6 @@ li img:hover {
 
     /*ABOUT*/
     #me {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
         flex-flow: column wrap;
     }
 
