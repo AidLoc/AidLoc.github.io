@@ -56,7 +56,7 @@ $('#about').on('click', function () {
 });
 
 $('#shop').on('click', function () {
-    window.open('https://lockedsgn.threadless.com/', '_blank');
+    window.open('https://www.redbubble.com/people/lockedsgn/shop', '_blank');
 });
 
 
