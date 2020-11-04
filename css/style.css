@@ -624,7 +624,7 @@ h1 {
 
     .col4,
     .col3,
-    .col3,
+    .col2,
     .col1 {
         -webkit-column-count: 1;
         column-count: 1;
@@ -632,9 +632,14 @@ h1 {
 
     .col4 img,
     .col3 img,
-    .col3 img,
+    .col2 img,
     .col1 img {
         padding: 6vw;
+    }
+
+    .single-row {
+        height: unset;
+        max-height: unset;
     }
 
 
