@@ -453,6 +453,19 @@ li img:hover {
     align-items: center;
 }
 
+h1 {
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    margin: 4vw;
+    margin-left: 8vw;
+    color: white;
+    font-size: min(max(1rem, 4vw), 28px);
+    font-family: b2;
+    text-align: left;
+}
+
 .short p {
     width: 80% !important;
 }
@@ -503,7 +516,8 @@ li img:hover {
 }
 
 .single-row {
-    height: 65vh;
+    height: auto;
+    max-height: 65vh;
 }
 
 

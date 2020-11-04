@@ -92,3 +92,19 @@ $('#ding').on('click', function () {
 $('#park').on('click', function () {
     window.location.href = '/projects/park.html';
 });
+
+$('#mons').on('click', function () {
+    window.location.href = '/projects/mons.html';
+});
+
+$('#brnd').on('click', function () {
+    window.location.href = '/projects/brnd.html';
+});
+
+$('#link').on('click', function () {
+    window.location.href = '/projects/link.html';
+});
+
+$('#muse').on('click', function () {
+    window.location.href = '/projects/muse.html';
+});
