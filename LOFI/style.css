@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: main;
+    src: url("fonts/couriernew.ttf");
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    flex-flow: column wrap;
+}
+
+#title {
+    color: white;
+    font-size: 12pt;
+    font-family: main;
+    justify-self: start;
+}
+
+#nav {
+    margin-top: 4vh;
+    width: 100%;
+    display: flex;
+}
+
+img {
+    height: 5vh;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+img:hover {
+    opacity: 75%;
+}
+
+#left {
+    margin-right: auto;
+}
+
+#right {
+   margin-left: auto; 
+}
+
