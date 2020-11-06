@@ -9,7 +9,7 @@ let init = true;
 function preload() {
     for (let i = 0; i <= 15; i++) {
         let i2 = i + 1;
-        imgs[i] = loadImage("../images/Home/" + i2 + ".png");
+        imgs[i] = loadImage("../LOFI/images/Hydro/" + i2 + ".png");
     }
     print("preload complete");
 }
