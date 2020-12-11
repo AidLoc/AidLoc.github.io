@@ -107,7 +107,7 @@ body {
 }
 
 #nav div span {
-    font-size: min(max(1rem, 4vw), 25px);
+    font-size: 2.25em;
     pointer-events: auto;
     -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
@@ -229,7 +229,11 @@ li img {
     -o-object-fit: cover;
     object-fit: cover;
     max-height: 125%;
+}
 
+#vid {
+    object-fit: cover;
+    margin-top: 6vh;
 }
 
 li img:hover {
@@ -241,7 +245,7 @@ li img:hover {
     color: white;
     z-index: 400;
     font-family: b2;
-    font-size: min(max(1rem, 4vw), 22px);
+    font-size: 2em;
     width: 85%;
     height: auto;
     text-align: center;
@@ -276,6 +280,7 @@ li img:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-flow: row nowrap;
 }
 
 #abt {
@@ -288,20 +293,21 @@ li img:hover {
 #bio {
     color: white;
     font-family: b4;
-    font-size: min(max(1rem, 4vw), 18px);
-    margin-left: 4vw;
-    width: 90%;
+    font-size: 2em;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100%;
     text-align: justify;
     line-height: 2;
 }
 
 #prof {
+	width: 50vw;
+}
+
+#pic{
     width: 100%;
-    height: auto;
-    padding: 4vw;
-    padding-top: 0vw;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    padding-right: 4vw;
 }
 
 #socials {
@@ -359,7 +365,7 @@ li img:hover {
     justify-content: center;
     color: white;
     font-family: b4;
-    font-size: min(max(1rem, 4vw), 12px);
+    font-size: 1.25em;
 
 }
 
@@ -387,7 +393,7 @@ li img:hover {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%;
+    /*min-height: 100%;*/
     max-width: 125%;
 }
 
@@ -412,32 +418,33 @@ li img:hover {
 
 #name {
     font-family: b1;
-    font-size: min(max(1rem, 8vw), 40px);
+    font-size: 3em;
     margin-bottom: 1vw;
 }
 
 #info {
     font-family: b3;
-    font-size: min(max(1rem, 4vw), 15px);
+    font-size: 2em;
 }
 
 #content {
+    margin-top: 4vh;
     height: auto;
     width: 100%;
 }
 
 #content p {
     vertical-align: top;
-    display: inline-block;
-    width: 40%;
     height: auto;
-    margin: 4vw;
+    padding: 6vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    width: 100%;
     color: white;
-    font-size: min(max(1rem, 4vw), 19px);
+    font-size: 2.25em;
     font-family: b4;
-    -webkit-column-gap: 2vw;
-    column-gap: 2vw;
     text-align: justify;
+    line-height: 1.5;
 }
 
 .short {
@@ -520,6 +527,16 @@ h1 {
     max-height: 65vh;
 }
 
+#video {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
 
 /* ----- Queries ----- */
 
@@ -542,6 +559,8 @@ h1 {
         width: 8vw;
         padding: 0vw;
     }
+
+
 
     /*SPLASH*/
 
@@ -574,7 +593,7 @@ h1 {
         border: 3vw solid var(--color);
     }
 
-    li img {
+    #work ul li img {
         max-height: 200%;
     }
 
@@ -596,6 +615,11 @@ h1 {
     #name {
         line-height: normal;
         font-family: b2;
+        font-size: 2em;
+    }
+
+    #info {
+        font-size: 1em;
     }
 
     #hero img {
@@ -620,6 +644,7 @@ h1 {
         margin-left: auto;
         margin-right: auto;
         display: block;
+        font-size: 1em;
     }
 
     .col4,
@@ -655,7 +680,16 @@ h1 {
 
     #bio {
         line-height: 1.25;
-        font-size: min(max(1rem, 4vw), 14px);
+        font-size: 1em;
+    }
+    
+    #prof {
+        width: 100vw;
+        padding: 2vw;
+    }
+    
+    #footer {
+        font-size: 0.75em;
     }
 
 }

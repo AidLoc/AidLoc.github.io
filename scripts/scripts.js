@@ -59,6 +59,15 @@ $('#shop').on('click', function () {
     window.open('https://www.redbubble.com/people/lockedsgn/shop', '_blank');
 });
 
+//animated still
+
+$("#vid").hover(function(){
+    $(this).attr("src", "images/fold/promo.gif");
+});
+
+$("#vid").mouseout(function(){
+    $(this).attr("src", "images/fold/still.jpg");
+});
 
 
 $('#lofi').on('click', function () {
@@ -105,6 +114,18 @@ $('#link').on('click', function () {
     window.location.href = '/projects/link.html';
 });
 
-$('#muse').on('click', function () {
-    window.location.href = '/projects/muse.html';
+$('#fold').on('click', function () {
+    window.location.href = '/projects/fold.html';
+});
+
+$('#bact').on('click', function () {
+    window.location.href = '/projects/bact.html';
+});
+
+$('#lost').on('click', function () {
+    window.location.href = '/projects/lost.html';
+});
+
+$('#lore').on('click', function () {
+    window.location.href = '/projects/lore.html';
 });
