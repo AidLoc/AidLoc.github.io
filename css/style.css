@@ -107,7 +107,7 @@ body {
 }
 
 #nav div span {
-    font-size: 2.25em;
+    font-size: 1.25em;
     pointer-events: auto;
     -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
@@ -245,7 +245,7 @@ li img:hover {
     color: white;
     z-index: 400;
     font-family: b2;
-    font-size: 2em;
+    font-size: 1.5em;
     width: 85%;
     height: auto;
     text-align: center;
@@ -293,7 +293,7 @@ li img:hover {
 #bio {
     color: white;
     font-family: b4;
-    font-size: 2em;
+    font-size: 1em;
     padding-left: 4vw;
     padding-right: 4vw;
     width: 100%;
@@ -418,13 +418,13 @@ li img:hover {
 
 #name {
     font-family: b1;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 1vw;
 }
 
 #info {
     font-family: b3;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 #content {
@@ -441,7 +441,7 @@ li img:hover {
     padding-top: 2vh;
     width: 100%;
     color: white;
-    font-size: 2.25em;
+    font-size: 1.25em;
     font-family: b4;
     text-align: justify;
     line-height: 1.5;
