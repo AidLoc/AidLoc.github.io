@@ -63,17 +63,51 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (33.33%)[3];
     grid-template-columns: repeat(3, 33.33%);
+    -ms-grid-rows: 50% 50%;
     grid-template-rows: 50% 50%;
     pointer-events: none;
     z-index: 200;
 }
 
+#nav > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#nav > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+#nav > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+#nav > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+#nav > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
+#nav > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+}
+
 #logo {
     grid-column: 0 / 1;
     grid-row: 0 / 0;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     margin-top: -1vh;
 }
 
@@ -89,21 +123,27 @@ body {
 }
 
 #about {
+    -ms-grid-column: 3;
     grid-column: 3;
     grid-row: 0;
-    justify-self: end
+    -ms-grid-column-align: end;
+        justify-self: end
 }
 
 #shop {
     -ms-flex-item-align: end;
-    align-self: end;
+    -ms-grid-row-align: end;
+        align-self: end;
 }
 
 #port {
+    -ms-grid-column: 3;
     grid-column: 3 / 3;
     -ms-flex-item-align: end;
-    align-self: end;
-    justify-self: end;
+    -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
 }
 
 #nav div span {
@@ -117,12 +157,14 @@ body {
     opacity: 50%;
     cursor: pointer;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
 .hov span:not( :hover) {
     opacity: 100%;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -166,14 +208,17 @@ body {
     opacity: 50%;
     cursor: pointer;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
 }
 
 #enter:not( :hover) {
     opacity: 100%;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -232,7 +277,8 @@ li img {
 }
 
 #vid {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-top: 6vh;
 }
 
@@ -253,7 +299,8 @@ li img:hover {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     pointer-events: none;
     opacity: 0%;
 }
@@ -261,12 +308,14 @@ li img:hover {
 #work ul li:hover > .title {
     opacity: 100%;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
 #work ul li:not( :hover) > .title {
     opacity: 0%;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -280,7 +329,10 @@ li img:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
 }
 
 #abt {
@@ -340,12 +392,14 @@ li img:hover {
     opacity: 50%;
     cursor: pointer;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
 #soc:not( :hover) {
     opacity: 100%;
     -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -399,6 +453,7 @@ li img:hover {
 
 #proj {
     background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(20, 20, 20, 1)), color-stop(50%, rgba(20, 20, 20, .75)), to(rgba(20, 20, 20, 0)));
+    background: -o-linear-gradient(bottom, rgba(20, 20, 20, 1) 10%, rgba(20, 20, 20, .75) 50%, rgba(20, 20, 20, 0) 100%);
     background: linear-gradient(to top, rgba(20, 20, 20, 1) 10%, rgba(20, 20, 20, .75) 50%, rgba(20, 20, 20, 0) 100%);
     color: white;
     width: 100%;
@@ -431,6 +486,19 @@ li img:hover {
     margin-top: 4vh;
     height: auto;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #content p {
@@ -481,7 +549,8 @@ h1 {
     padding: 2vw;
     line-height: 4vw;
     -webkit-column-gap: 2vw;
-    column-gap: 2vw;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
     display: inline-block;
 }
 
@@ -492,17 +561,23 @@ h1 {
 
 .col4 {
     -webkit-column-count: 4;
-    column-count: 4;
+    -moz-column-count: 4;
+         column-count: 4;
+    width: 80%;
 }
 
 .col3 {
     -webkit-column-count: 3;
-    column-count: 3;
+    -moz-column-count: 3;
+         column-count: 3;
+    width: 80%;
 }
 
 .col2 {
     -webkit-column-count: 2;
-    column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
+    width: 80%;
 }
 
 .col1 {
@@ -516,6 +591,7 @@ h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 80%;
 }
 
 .col1 img {
@@ -524,26 +600,44 @@ h1 {
 
 .single-row {
     height: auto;
-    max-height: 65vh;
+    /*max-height: 65vh;*/
 }
 
 #video {
     width: 100vw;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 5vw;
 }
 
 #video2 {
     width: 100vw;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 5vw;
     overflow: hidden;
     position: relative;
@@ -561,6 +655,33 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.sitevid {
+    width: 80%; 
+}
+
+/*featherlight overrides*/
+.featherlight .featherlight-content {
+    background: rgb(20,20,20) !important;
+}
+
+.featherlight .featherlight-close-icon {
+    background: none !important;
+    color: white !important;
+}
+
+.featherlight-next, .featherlight-previous :hover{
+    background: none !important;
+}
+
+.featherlight-previous, .featherlight-next :hover{
+    background: none !important;
+}
+
+.featherlight span {
+    text-shadow: none !important;
+    color: rgba(20, 20, 20, .75) !important;
 }
 
 /* ----- Queries ----- */
@@ -632,6 +753,7 @@ h1 {
     #work ul li:not( :hover) > .title {
         opacity: 100%;
         -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
         transition: all .5s ease;
     }
 
@@ -661,9 +783,11 @@ h1 {
     #content p {
         margin: 0;
         -webkit-column-gap: 0vw;
-        column-gap: 0vw;
+        -moz-column-gap: 0vw;
+             column-gap: 0vw;
         -webkit-column-count: 1;
-        column-count: 1;
+        -moz-column-count: 1;
+             column-count: 1;
         width: 100vw;
         padding: 6vw;
         margin-left: auto;
@@ -677,7 +801,9 @@ h1 {
     .col2,
     .col1 {
         -webkit-column-count: 1;
-        column-count: 1;
+        -moz-column-count: 1;
+             column-count: 1;
+        width: 100%;
     }
 
     .col4 img,
@@ -691,7 +817,6 @@ h1 {
         height: unset;
         max-height: unset;
     }
-
 
 
 
