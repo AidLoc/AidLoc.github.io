@@ -156,3 +156,7 @@ $('#aqtr').on('click', function () {
 $('#3d').on('click', function () {
     window.location.href = '/projects/3d.html';
 });
+
+$('#buha').on('click', function () {
+    window.location.href = '/projects/buha.html';
+});
