@@ -291,7 +291,7 @@ li img:hover {
     color: white;
     z-index: 400;
     font-family: b2, "Lucida Grande", Tahoma, Sans-Serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
     width: 85%;
     height: auto;
     text-align: center;
@@ -745,7 +745,7 @@ h1 {
 
     .title {
         opacity: 100%;
-        font-size: min(max(1rem, 6vw), 33px);
+        font-size: min(max(1.5rem, 6vw), 33px);
         -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
         filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     }
