@@ -74,9 +74,9 @@ $('#about').on('click', function () {
     $.scrollTo($('#me'), 3250);
 });
 
-$('#shop').on('click', function () {
-    window.open('https://www.redbubble.com/people/lockedsgn/shop', '_blank');
-});
+/*$('#shop').on('click', function () {
+    window.open('https://www.lockesupply.square.site', '_blank');
+});*/
 
 //animated still
 
